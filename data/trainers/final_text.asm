@@ -71,6 +71,7 @@ FinalText_SinglePhrases:
 	dw BlaineFinalPkmnText
 	dw BlueFinalPkmnText
 	dw RedFinalPkmnText
+	dw OxygenFinalPkmnText
 	dw LeafFinalPkmnText
 	; ...
 	dw ProfOakFinalPkmnText

@@ -31,6 +31,7 @@ Route29_MapScriptHeader:
 	object_const_def
 	const ROUTE29_LYRA
 	const ROUTE29_TUSCANY
+	const ROUTE29_BUG_CATCHER
 
 Route29Tuscany:
 	checkevent EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST
@@ -321,7 +322,7 @@ Route29Sign2Text:
 Route29AdvancedTipsSignText:
 	text "Advanced Tips!"
 
-	para "Press Down+B at"
+	para "Press DownB at"
 	line "the title screen"
 
 	para "to reset the"

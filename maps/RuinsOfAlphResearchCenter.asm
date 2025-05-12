@@ -196,6 +196,7 @@ RuinsOfAlphResearchCenterScientist2Script:
 	jumpopenedtext RuinsOfAlphResearchCenterScientist2Text_FocusedOurStudies
 
 MapRuinsofAlphResearchCenterSignpost1Script:
+	setevent EVENT_UNKI_UNSEALED
 	opentext
 	checkevent EVENT_RUINS_OF_ALPH_RESEARCH_CENTER_SCIENTIST
 	iffalsefwd .SkipChecking

@@ -239,6 +239,7 @@ OverqwilAnimationExtra:   INCLUDE "gfx/pokemon/overqwil/anim_idle.asm"
 FarigirafAnimationExtra:  INCLUDE "gfx/pokemon/farigiraf/anim_idle.asm"
 ClodsireAnimationExtra:   INCLUDE "gfx/pokemon/clodsire/anim_idle.asm"
 AnnihilapeAnimationExtra: INCLUDE "gfx/pokemon/annihilape/anim_idle.asm"
+UnownkingAnimationExtra:  INCLUDE "gfx/pokemon/unownking/anim_idle.asm"
 
 EggAnimationExtra:        INCLUDE "gfx/pokemon/egg/anim_idle.asm"
 

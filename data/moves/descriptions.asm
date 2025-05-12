@@ -150,7 +150,7 @@ MoveDescriptions::
 	dw SporeDescription
 	dw FlashDescription
 	dw ExtrasensoryDescription
-	dw SplashDescription
+	dw BeserkChompDescription
 	dw DragonDanceDescription
 	dw CrabhammerDescription
 	dw ExplosionDescription
@@ -1025,9 +1025,9 @@ TransformDescription:
 	next "the foe's guise."
 	done
 
-SplashDescription:
-	text "Has no effect"
-	next "whatsoever."
+BeserkChompDescription:
+	text "User chomps for"
+	next "3-4 turns.@"
 	done
 
 BonemerangDescription:

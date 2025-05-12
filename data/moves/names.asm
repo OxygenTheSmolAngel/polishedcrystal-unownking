@@ -149,7 +149,7 @@ MoveNames::
 	li "Spore"
 	li "Flash"
 	li "Extrasensory"
-	li "Splash"
+	li "BerserkChomp"
 	li "Dragon Dance"
 	li "Crabhammer"
 	li "Explosion"

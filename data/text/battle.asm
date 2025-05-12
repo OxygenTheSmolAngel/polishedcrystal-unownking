@@ -2109,3 +2109,12 @@ LawrenceFinalPkmnText:
 ReiFinalPkmnText:
 	text "I'm not done yet."
 	prompt
+
+OxygenFinalPkmnText:
+	text "Come on, Unki!"
+	line "You can do this,"
+	cont "my dear beast!"
+	prompt
+
+
+

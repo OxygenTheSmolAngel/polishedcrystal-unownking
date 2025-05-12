@@ -50,12 +50,39 @@ Red:
 	special Special_ReloadSpritesNoPalettes
 	disappear SILVERCAVEROOM3_RED
 	setflag ENGINE_RED_IN_MOUNT_SILVER
+	pause 50
+	playsound SFX_INTRO_UNOWN_3
+	waitsfx
 	pause 15
+	playsound SFX_INTRO_UNOWN_2
+	waitsfx
+	pause 15
+	playsound SFX_INTRO_UNOWN_1
+	waitsfx
+	pause 15
+	playsound SFX_INTRO_UNOWN_2
+	waitsfx
+	pause 15
+	playsound SFX_INTRO_UNOWN_3
+	playsound SFX_INTRO_UNOWN_2
+	playsound SFX_INTRO_UNOWN_1
+	playsound SFX_INTRO_UNOWN_2
+	waitsfx
+	pause 25
+	special Special_FadeInQuickly
+	opentext
+	writetext UnkiAwakenedText
+	waitbutton
+	closetext
+	special Special_FadeBlackQuickly
+	setevent EVENT_UNKI_UNSEALED
+	pause 25
+	cry UNOWN_KING
+	pause 50
 	special Special_FadeInQuickly
 	pause 30
 	special HealParty
 	setevent EVENT_BEAT_RED
-	playmapmusic
 	end
 
 .Text1: ; text > text
@@ -66,4 +93,13 @@ Red:
 
 .Text2: ; text > text
 	text "…"
+	done
+
+UnkiAwakenedText:
+	text "You felt a strange"
+	line "presence."
+
+	para "It was as if"
+	line "someone was waking"
+	cont "up."
 	done

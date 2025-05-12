@@ -11,6 +11,7 @@ BattleMusic_Trainers:
 	db CHAMPION,         MUSIC_CHAMPION_BATTLE
 	db RED,              MUSIC_WCS_BATTLE_BW
 	db LEAF,             MUSIC_CHAMPION_BATTLE_B2W2
+	db OXYGEN,           MUSIC_CHAMPION_BATTLE_B2W2
 	db RIVAL0,           MUSIC_RIVAL_BATTLE
 	db RIVAL1,           MUSIC_RIVAL_BATTLE
 	db RIVAL2,           MUSIC_RIVAL_BATTLE
@@ -68,6 +69,7 @@ BattleMusic_Legendaries:
 	music_legendary HO_OH,    PLAIN_FORM,    MUSIC_HO_OH_BATTLE_HGSS
 	music_legendary LUGIA,    PLAIN_FORM,    MUSIC_LUGIA_BATTLE_HGSS
 	music_legendary CELEBI,   PLAIN_FORM,    MUSIC_SUICUNE_BATTLE
+   music_legendary UNOWN_KING,PLAIN_FORM,    MUSIC_HO_OH_BATTLE_HGSS
 	dw -1
 
 BattleMusic_RegionalTrainers:

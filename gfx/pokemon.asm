@@ -1059,6 +1059,10 @@ SECTION "UnownQuestion Pics", ROMX
 UnownQuestionFrontpic: INCBIN "gfx/pokemon/unown_question/front.animated.2bpp.lz"
 UnownQuestionBackpic:  INCBIN "gfx/pokemon/unown_question/back.2bpp.lz"
 
+SECTION "Unownking Pics", ROMX
+UnownkingFrontpic: INCBIN "gfx/pokemon/unownking/front.animated.2bpp.lz"
+UnownkingBackpic:  INCBIN "gfx/pokemon/unownking/back.2bpp.lz"
+
 SECTION "Pikachu Pics", ROMX
 PikachuPlainFrontpic: INCBIN "gfx/pokemon/pikachu_plain/front.animated.2bpp.lz"
 PikachuSurfFrontpic:  INCBIN "gfx/pokemon/pikachu_surf/front.animated.2bpp.lz"

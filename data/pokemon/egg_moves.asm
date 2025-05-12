@@ -301,7 +301,7 @@ PoliwagEggSpeciesMoves:
 	dp POLIWAG, PLAIN_FORM
 	db ENCORE
 	db HAZE
-	db SPLASH
+	db STRUGGLE
 	db BUBBLE_BEAM
 	db WATER_PULSE
 	db $ff
@@ -587,7 +587,7 @@ HorseaEggSpeciesMoves:
 	db DRAGON_RAGE
 	db DRAGONBREATH
 	db OCTAZOOKA
-	db SPLASH
+	db STRUGGLE
 	db HAZE
 	db WATER_PULSE
 	db $ff
@@ -793,7 +793,7 @@ CleffaEggSpeciesMoves:
 	db CALM_MIND
 	db BELLY_DRUM
 	db AMNESIA
-	db SPLASH
+	db STRUGGLE
 	db FRESH_SNACK
 	db $ff
 
@@ -1062,7 +1062,7 @@ CorsolaGalarianEggSpeciesMoves:
 
 RemoraidEggSpeciesMoves:
 	dp REMORAID, PLAIN_FORM
-	db SPLASH
+	db STRUGGLE
 	db HAZE
 	db OCTAZOOKA
 	db ROCK_BLAST
@@ -1081,7 +1081,7 @@ DelibirdEggSpeciesMoves:
 	db ICY_WIND
 	db QUICK_ATTACK
 	db RAPID_SPIN
-	db SPLASH
+	db STRUGGLE
 	db $ff
 
 SkarmoryEggSpeciesMoves:
@@ -1217,7 +1217,7 @@ MantykeEggSpeciesMoves:
 	dp MANTYKE, PLAIN_FORM
 	db HAZE
 	db MIRROR_COAT
-	db SPLASH
+	db STRUGGLE
 	db HYDRO_PUMP
 	db GUNK_SHOT
 	db $ff
