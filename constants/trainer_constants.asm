@@ -219,9 +219,15 @@ DEF CRYS EQU __trainer_class__
 	const ADRIAN
 	const ZANE
 
+<<<<<<< HEAD
 	trainerclass TWINS ; 25
 	const AMYANDMAY1
 	const AMYANDMAY2
+=======
+	trainerclass TWINS ; 24
+	const AMYANDMIMI1
+	const AMYANDMIMI2
+>>>>>>> 60d6807c178ffe00384336b143fe11f48d34bfcf
 	const ANNANDANNE1
 	const ANNANDANNE2
 	const JOANDZOE1
