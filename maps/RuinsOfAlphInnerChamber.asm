@@ -4,60 +4,79 @@ RuinsOfAlphInnerChamber_MapScriptHeader:
 	scene_script RuinsofAlphInnerChamberTrigger1
 
 	def_callbacks
+	callback MAPCALLBACK_TILES, RuinsofAlphInnerChamberPitCallback
 
 	def_warp_events
-	warp_event 10, 15, RUINS_OF_ALPH_ENTRANCE_CHAMBER, 3
-	warp_event  3, 17, RUINS_OF_ALPH_HO_OH_CHAMBER, 3
-	warp_event  4, 17, RUINS_OF_ALPH_HO_OH_CHAMBER, 4
-	warp_event 15,  5, RUINS_OF_ALPH_KABUTO_CHAMBER, 3
-	warp_event 16,  5, RUINS_OF_ALPH_KABUTO_CHAMBER, 4
-	warp_event  3, 23, RUINS_OF_ALPH_OMANYTE_CHAMBER, 3
-	warp_event  4, 23, RUINS_OF_ALPH_OMANYTE_CHAMBER, 4
-	warp_event 15, 26, RUINS_OF_ALPH_AERODACTYL_CHAMBER, 3
-	warp_event 16, 26, RUINS_OF_ALPH_AERODACTYL_CHAMBER, 4
+	warp_event 10, 19, RUINS_OF_ALPH_ENTRANCE_CHAMBER, 3
+	warp_event  3, 21, RUINS_OF_ALPH_HO_OH_CHAMBER, 3
+	warp_event  4, 21, RUINS_OF_ALPH_HO_OH_CHAMBER, 4
+	warp_event 15,  9, RUINS_OF_ALPH_KABUTO_CHAMBER, 3
+	warp_event 16,  9, RUINS_OF_ALPH_KABUTO_CHAMBER, 4
+	warp_event  3, 27, RUINS_OF_ALPH_OMANYTE_CHAMBER, 3
+	warp_event  4, 27, RUINS_OF_ALPH_OMANYTE_CHAMBER, 4
+	warp_event 15, 30, RUINS_OF_ALPH_AERODACTYL_CHAMBER, 3
+	warp_event 16, 30, RUINS_OF_ALPH_AERODACTYL_CHAMBER, 4
+	warp_event  7,  1, RUINS_OF_ALPH_UNOWNKING_CHAMBER, 1
+	warp_event  8,  1, RUINS_OF_ALPH_UNOWNKING_CHAMBER, 2
+	warp_event  8,  7, RUINS_OF_ALPH_UNOWNKING_CHAMBER, 3
 
 	def_coord_events
 
 	def_bg_events
-	bg_event  2,  5, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  5,  5, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  8,  3, BGEVENT_READ,     RuinsOfAlphUnownKing
-	bg_event 11,  5, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event 14,  5, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event 17,  5, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  2, 10, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  5, 10, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  8, 10, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event 11, 10, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event 14, 10, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event 17, 10, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  2, 15, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  5, 15, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event 14, 15, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event 17, 15, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  2, 20, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  5, 20, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  8, 20, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event 11, 20, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event 14, 20, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event 17, 20, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  2, 26, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  5, 26, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  8, 26, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event 11, 26, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event 14, 26, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event 17, 26, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  2,  9, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  5,  9, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  8,  5, BGEVENT_READ,     RuinsOfAlphUnownKing
+	bg_event 11,  9, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event 14,  9, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event 17,  9, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  2, 14, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  5, 14, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  8, 14, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event 11, 14, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event 14, 14, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event 17, 14, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  2, 19, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  5, 19, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event 14, 19, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event 17, 19, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  2, 24, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  5, 24, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  8, 24, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event 11, 24, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event 14, 24, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event 17, 24, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  2, 30, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  5, 30, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  8, 30, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event 11, 30, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event 14, 30, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event 17, 30, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
 
 	def_object_events
-	object_event  3,  9, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberFisherText, EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
-	object_event 14, 16, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 1, 1, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberTeacherText, EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
-	object_event 11, 21, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberGrampsText, EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
-	object_event  7, 13, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, PAL_NPC_BROWN, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberScientistText, EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
+	object_event  3, 13, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberFisherText, EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
+	object_event 14, 20, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 1, 1, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberTeacherText, EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
+	object_event 11, 25, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberGrampsText, EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
+	object_event  7, 17, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, PAL_NPC_BROWN, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberScientistText, EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
 
 RuinsofAlphInnerChamberTrigger1:
 	sdefer RuinsOfAlphInnerChamberStrangePresenceScript
 RuinsofAlphInnerChamberTrigger0:
 	end
+
+RuinsofAlphInnerChamberPitCallback:
+	checkevent EVENT_UNKI_CHAMBER_UNLOCKED
+	iftruefwd .FloorOpen
+	endcallback
+
+.FloorOpen:
+    checkevent EVENT_CAUGHT_UNKI
+    iftruefwd .UnkiCaught
+	changeblock 7, 1, $29
+	changeblock 8, 1, $2A
+	endcallback
+
+.UnkiCaught:
+endcallback
 
 RuinsOfAlphInnerChamberStrangePresenceScript:
 	showtext RuinsOfAlphStrangePresenceText
@@ -78,6 +97,8 @@ RuinsOfAlphUnownKing:
 	closetext
 	checkevent EVENT_BEAT_UNKI
 	iftruefwd .EndUnownKing
+	checkevent EVENT_UNKI_CHAMBER_UNLOCKED
+	iftruefwd .ChamberUnlocked
 	opentext
 	writetext RuinsOfAlphInnerChamberStatueInteractText
 	yesorno
@@ -94,24 +115,17 @@ RuinsOfAlphUnownKing:
 	earthquake 50
 	waitsfx
 	pause 30
-	earthquake 5
-	writetext UnkiEncounterText
-	cry UNOWN_KING
-	pause 15
-	closetext
-	loadvar VAR_BATTLETYPE, BATTLETYPE_LEGENDARY
-	loadwildmon UNOWN_KING, 85
-	startbattle
-	reloadmapafterbattle
-	special RestartMapMusic
-	special CheckBattleCaughtResult
-	iffalsefwd .UnkiNotCaught
-	cry UNOWN_KING
+	playsound SFX_STRENGTH
+	earthquake 15
+	setevent EVENT_UNKI_CHAMBER_UNLOCKED
+	changeblock 7, 1, $29
+	changeblock 8, 1, $2A
+	refreshmap
 	opentext
-	writetext UnkiCaughtText
+	writetext SecretPassageOpenedText
 	waitbutton
 	closetext
-	setevent EVENT_CAUGHT_UNKI
+	special RestartMapMusic
 	end
 
 .ChamberStatue:
@@ -120,6 +134,13 @@ RuinsOfAlphUnownKing:
 	faceplayer
 	opentext
 	writetext InteractionRefusedText
+	waitbutton
+	closetext
+	end
+.ChamberUnlocked
+	faceplayer
+	opentext
+	writetext SecretPassageOpenedText
 	waitbutton
 	closetext
 	end
@@ -135,14 +156,6 @@ RuinsOfAlphUnownKing:
 	writetext UnkiLiberatedText
 	waitbutton
 	closetext
-	end
-.UnkiNotCaught:
-	setevent EVENT_BEAT_UNKI
-	opentext
-	writetext UnkiStatueEndText
-	waitbutton
-	closetext
-	pause 20
 	end
 
 RuinsOfAlphInnerChamberStatueAltText:
@@ -258,3 +271,8 @@ UnkiLiberatedText:
 	line "has been"
 	cont "liberated."
 	done
+
+SecretPassageOpenedText:
+    text "A new path has"
+    line "opened."
+    done

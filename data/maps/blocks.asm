@@ -312,6 +312,10 @@ SECTION "RuinsOfAlphSinjohChamber_BlockData", ROMX
 RuinsOfAlphSinjohChamber_BlockData:
 	INCBIN "maps/RuinsOfAlphSinjohChamber.ablk.lz"
 
+SECTION "RuinsOfAlphUnownKingChamber_BlockData", ROMX
+RuinsOfAlphUnownKingChamber_BlockData:
+	INCBIN "maps/RuinsOfAlphUnownKingChamber.ablk.lz"
+
 SECTION "RuinsOfAlphAerodactylChamber_BlockData", ROMX
 RuinsOfAlphAerodactylChamber_BlockData:
 RuinsOfAlphHoOhChamber_BlockData:

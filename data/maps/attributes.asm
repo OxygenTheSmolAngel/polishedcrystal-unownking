@@ -462,6 +462,7 @@ ENDM
 	map_attributes RuinsOfAlphOmanyteWordRoom, RUINS_OF_ALPH_OMANYTE_WORD_ROOM, $0, 0
 	map_attributes RuinsOfAlphAerodactylWordRoom, RUINS_OF_ALPH_AERODACTYL_WORD_ROOM, $0, 0
 	map_attributes RuinsOfAlphSinjohChamber, RUINS_OF_ALPH_SINJOH_CHAMBER, $0, 0
+	map_attributes RuinsOfAlphUnownKingChamber, RUINS_OF_ALPH_UNOWNKING_CHAMBER, $0, 0
 	map_attributes Route22Past, ROUTE_22_PAST, $2c, 0
 	map_attributes UnionCave1F, UNION_CAVE_1F, $9, 0
 	map_attributes UnionCaveB1FNorth, UNION_CAVE_B1F_NORTH, $9, 0
