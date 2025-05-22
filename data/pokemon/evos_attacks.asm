@@ -5949,7 +5949,8 @@ endc
 	learnset 47, BULLET_PUNCH
 	learnset 50, ANCIENTPOWER
 	learnset 60, ZEN_HEADBUTT
-	learnset 75, BERSERKCHOMP
+	learnset 75, GIGA_IMPACT
+	learnset 85, BERSERKCHOMP
 
 	; Also terminates previous mon's learnset
 	EggEvosAttacks:
