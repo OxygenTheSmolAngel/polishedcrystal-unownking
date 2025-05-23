@@ -73,21 +73,12 @@ RuinsOfAlphResearchCenterScientist3Script:
 	faceplayer
 	opentext
 	readvar VAR_UNOWNCOUNT
-	checkevent EVENT_RUINS_OF_ALPH_CLIMAX_DONE
-	iftruefwd .Conclusion
 	ifequalfwd NUM_UNOWN, .PrinterAvailable
 	jumpopenedtext RuinsOfAlphResearchCenterScientist3Text
 
-.Conclusion:
-	opentext
-	writetext RuinsofAlphResearchCenterScientistConclusionText
-	waitbutton
-	closetext
-	checkpoke UNOWN_KING
-	iftruefwd .UnownKingExtraEvent
-	end
-
 .PrinterAvailable:
+	checkevent EVENT_RUINS_OF_ALPH_CLIMAX_DONE
+	iftruefwd .Conclusion
 	writetext RuinsOfAlphResearchCenterScientist3_PrinterAvailable
 	promptbutton
 	setevent EVENT_DECO_UNOWN_DOLL
@@ -136,6 +127,14 @@ RuinsOfAlphResearchCenterScientist3Script:
 	setevent EVENT_DO_RUINS_OF_ALPH_CLIMAX
 	pause 15
 	warpfacing DOWN, RUINS_OF_ALPH_OUTSIDE, 19, 18
+	end
+.Conclusion:
+	opentext
+	writetext RuinsofAlphResearchCenterScientistConclusionText
+	waitbutton
+	closetext
+	checkpoke UNOWN_KING
+	iftruefwd .UnownKingExtraEvent
 	end
 .UnownKingExtraEvent:
 	pause 5
@@ -644,4 +643,3 @@ UnkiInspectionEnd:
 	para "Here, have this"
 	line "as thanks."
 	done
-
