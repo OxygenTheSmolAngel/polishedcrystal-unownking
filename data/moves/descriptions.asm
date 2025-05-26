@@ -150,7 +150,7 @@ MoveDescriptions::
 	dw SporeDescription
 	dw FlashDescription
 	dw ExtrasensoryDescription
-	dw BeserkChompDescription
+	dw BerserkChompDescription
 	dw DragonDanceDescription
 	dw CrabhammerDescription
 	dw ExplosionDescription
@@ -1025,9 +1025,9 @@ TransformDescription:
 	next "the foe's guise."
 	done
 
-BeserkChompDescription:
-	text "User chomps for"
-	next "3-4 turns.@"
+BerserkChompDescription:
+	text "User chomps wildly"
+	next "for 2-3 turns.@"
 	done
 
 BonemerangDescription:

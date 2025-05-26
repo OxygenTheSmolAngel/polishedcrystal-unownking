@@ -152,7 +152,7 @@ BattleAnimations::
 	fardw BattleAnim_Spore
 	fardw BattleAnim_Flash
 	fardw BattleAnim_Extrasensory
-	fardw BattleAnim_BeserkChomp
+	fardw BattleAnim_BerserkChomp
 	fardw BattleAnim_DragonDance
 	fardw BattleAnim_Crabhammer
 	fardw BattleAnim_Explosion

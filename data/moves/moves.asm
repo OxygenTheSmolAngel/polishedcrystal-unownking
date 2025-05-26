@@ -199,7 +199,7 @@ endc
 	move SPORE,           EFFECT_SLEEP,               0, GRASS,     100, 15,   0, STATUS
 	move FLASH,           EFFECT_ACCURACY_DOWN,       0, NORMAL,    100, 20,   0, STATUS
 	move EXTRASENSORY,    EFFECT_FLINCH_HIT,         80, PSYCHIC,   100, 20,  10, SPECIAL
-	move BERSERKCHOMP,    EFFECT_RAMPAGE,           150, DARK,       70,  5,   0, PHYSICAL
+	move BERSERKCHOMP,    EFFECT_RAMPAGE,           130, DARK,       95,  5,   0, PHYSICAL
 	move DRAGON_DANCE,    EFFECT_DRAGON_DANCE,        0, DRAGON,    100, 20,   0, STATUS
 if DEF(FAITHFUL)
 	move CRABHAMMER,      EFFECT_NORMAL_HIT,        100, WATER,      90, 10,   0, PHYSICAL

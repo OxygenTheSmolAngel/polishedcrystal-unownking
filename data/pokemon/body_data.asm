@@ -298,7 +298,7 @@ PokemonBodyData:
 	body_data  32, 1600, QUADRUPED,    YELLOW ; FARIGIRAF
 	body_data  18, 2230, QUADRUPED,    BROWN  ; CLODSIRE
 	body_data  12,  560, BIPEDAL_TAIL, GRAY   ; ANNIHILAPE
-	body_data  57,  705, BIPEDAL_TAIL, BLACK  ; UNOWN_KING
+	body_data  67, 2305, BIPEDAL_TAIL, BLACK  ; UNOWN_KING
 	assert_table_length NUM_SPECIES
 
 	body_data  65, 2350, SERPENTINE,   RED    ; GYARADOS (GYARADOS_RED_FORM)
