@@ -13,7 +13,7 @@ RuinsOfAlphResearchCenter_MapScriptHeader:
 	def_coord_events
 
 	def_bg_events
-	bg_event  6,  5, BGEVENT_JUMPTEXT, RuinsOfAlphResearchCenterAcademicBooksText
+	bg_event  6,  5, BGEVENT_READ, RuinsOfAlphResearchCenterAcademicBooks
 	bg_event  3,  4, BGEVENT_READ, MapRuinsofAlphResearchCenterSignpost1Script
 	bg_event  7,  1, BGEVENT_JUMPTEXT, RuinsOfAlphResearchCenterPrinterText_DoesntWork
 	bg_event  5,  0, BGEVENT_JUMPTEXT, RuinsOfAlphResearchCenterProfSilktreePhotoText
@@ -42,6 +42,41 @@ RuinsOfAlphResearchCenterScientistCallback:
 	moveobject RUINSOFALPHRESEARCHCENTER_SCIENTIST3, 3, 7
 	appear RUINSOFALPHRESEARCHCENTER_SCIENTIST3
 	endcallback
+
+RuinsOfAlphResearchCenterAcademicBooks:
+    opentext
+    writetext RuinsOfAlphResearchCenterAcademicBooksText
+    waitbutton
+    closetext
+	checkevent EVENT_RUINS_OF_ALPH_CLIMAX_DONE
+	iftruefwd .UnownKingBook
+	end
+.UnownKingBook
+    opentext
+    writetext UnownKingBookText
+    yesorno
+    iffalsefwd .NoBook
+    special Special_FadeOutMusic
+    pause 15
+    playmusic MUSIC_FAINT_COURAGE
+    opentext
+    writetext UnownKingBookReadText
+    waitbutton
+    closetext
+    special Special_FadeOutMusic
+    pause 15
+    pokepic UNOWN_KING
+    waitbutton
+    closepokepic
+    opentext
+    writetext UnownKingDrawingText
+    waitbutton
+    closetext
+    pause 20
+    special RestartMapMusic
+    end
+.NoBook
+    end
 
 RuinsOfAlphResearchCenterGetUnownDexScript:
 	applymovement RUINSOFALPHRESEARCHCENTER_SCIENTIST3, RuinsOfAlphResearchCenterApproachesComputerMovement
@@ -129,6 +164,8 @@ RuinsOfAlphResearchCenterScientist3Script:
 	warpfacing DOWN, RUINS_OF_ALPH_OUTSIDE, 19, 18
 	end
 .Conclusion:
+    checkevent EVENT_RUINS_OF_ALPH_EXTRA_EVENT
+    iftruefwd .ExtraEventEnd
 	opentext
 	writetext RuinsofAlphResearchCenterScientistConclusionText
 	waitbutton
@@ -177,6 +214,7 @@ RuinsOfAlphResearchCenterScientist3Script:
 	closetext
 	pause 50
 	special FadeInPalettes
+	reloadmap
 	special Special_FadeOutMusic
 	special RestartMapMusic
 	opentext
@@ -184,9 +222,26 @@ RuinsOfAlphResearchCenterScientist3Script:
 	waitbutton
 	closetext
 	verbosegiveitem BERSERK_GENE
+	opentext
+	writetext BerserkGeneText
+	waitbutton
+	closetext
+	pause 10
+	opentext
+	writetext ExtraEventEndText
+	waitbutton
+	closetext
+	setevent EVENT_RUINS_OF_ALPH_EXTRA_EVENT
 	end
 
-.Refused
+.ExtraEventEnd:
+    opentext
+    writetext ExtraEventEndText
+    waitbutton
+    closetext
+    end
+
+.Refused:
 	opentext
 	writetext ExtraTextRefusal
 	waitbutton
@@ -361,6 +416,35 @@ RuinsofAlphResearchCenterScientistConclusionText:
 	para "We have to take"
 	line "care not to"
 	cont "disturb the site."
+
+    para "With that said,"
+    line "there is now one"
+    cont "more mystery..."
+
+    para "Who is the leader"
+    line "of the Unown?"
+
+    para "Most of us say"
+    line "that the god of"
+    cont "#mon is the"
+
+    para "leader."
+
+    para "But to some of"
+    line "us, we consider"
+    cont "one #mon as the"
+
+    para "true leader of"
+    line "the Unown."
+
+    para "The Unown King."
+
+    para "You can read"
+    line "about it on the"
+    cont "bookcase to the"
+
+    para "right if you"
+    line "want."
 	done
 
 RuinsOfAlphResearchCenterScientist1Text:
@@ -514,21 +598,136 @@ RuinsOfAlphResearchCenterAcademicBooksText:
 	para "Ancient Ruins…"
 	line "Mysteries of the"
 	cont "Ancients…"
+    done
+
+UnownKingBookText:
+	text "…"
+
+	para "A book catches"
+	line "your eye."
+
+	para "The Unown King:"
+	line "The Gluttonous"
+	cont "Beast that"
+
+	para "Plagued the"
+	line "Johto Region."
+
+	para "Read the book?"
 	done
+
+UnownKingBookReadText:
+    text "Long ago, there"
+    line "was a #mon that"
+    cont "ruled over a"
+
+    para "mysterious"
+    line "species of"
+    cont "#mon."
+
+    para "His name"
+    line "is the Unown"
+    cont "King."
+
+    para "He was said to"
+    line "be a god amongst"
+    cont "other gods."
+
+    para "A god of power and"
+    line "brutality."
+
+    para "He used to offer"
+    line "unfathomable"
+    cont "power to those who"
+
+    para "worship him."
+
+    para "But one day,"
+    line "a disastrous"
+    cont "event would occur."
+
+    para "This event was"
+    line "called: The"
+    cont "Bloodthirsty"
+
+    para "Doomsday."
+
+    para "The Unown King"
+    line "rampaged around"
+    cont "the Johto Region,"
+
+    para "devouring every"
+    line "living being that"
+    cont "stood in his way."
+
+    para "Eventually, three"
+    line "sages, with the"
+    cont "help of the god"
+
+    para "of all #mon,"
+    line "sealed the Unown"
+    cont "King in the Ruins"
+
+    para "of Alph."
+
+    para "He was put in a"
+    line "thousand-year"
+    cont "long slumber,"
+
+    para "and the god of"
+    line "#mon was now"
+    cont "considered the"
+
+    para "ruler of the"
+    line "Unown."
+
+    para "But one day,"
+    line "the Unown King"
+    cont "will awaken."
+
+    para "And when he"
+    line "does, he will"
+    cont "cause destruction"
+
+    para "all over the Johto"
+    line "region once again."
+
+    para "The Unown King"
+    line "will achieve"
+    cont "liberation."
+    done
+
+UnownKingDrawingText:
+    text "It's a drawing"
+    line "depicting the"
+    cont "Unown King."
+
+    para "………"
+
+    para "You get a strange"
+    line "feeling that you"
+    cont "will encounter"
+
+    para "this #mon in"
+    line "the future…"
+    done
 
 RuinsOfAlphResearchCenterScientist3ExtraText:
 	text "W-Wait just a"
 	line "second!"
 
-	para "That #mon... It"
-	line "can't be..."
+	para "That #mon… It"
+	line "can't be…"
 
 	para "Is that the"
 	line "Unown King?"
 
 	para "The legendary"
 	line "ruler of Unown who"
-	cont "was lost to time?"
+	cont "was sealed away"
+
+	para "for thousands of"
+	line "years?"
 
 	para "I can't believe "
 	line "it! The rumors"
@@ -554,11 +753,11 @@ UnkiComesOutOfBall:
 	done
 
 UnkiInspectionText:
-	text "Wow... This is"
-	line "amazing..."
+	text "Wow… This is"
+	line "amazing…"
 
 	para "The Unown King in"
-	line "the flesh... This"
+	line "the flesh… This"
 	cont "is revolutionary."
 
 	para "All of those years"
@@ -567,19 +766,23 @@ UnkiInspectionText:
 
 	para "to this."
 
+	para "That big red eye…"
+	line "Those crown-like"
+	cont "spikes…"
+
 	para "I need to inspect"
 	line "this beast some"
-	cont "more..."
+	cont "more…"
 	done
 
 UnkiInspectionText2:
-	text "Mmm..."
+	text "Mmm…"
 	line "These claws are"
 	cont "surprisingly soft."
 
 	para "But those sharp"
 	line "fangs can dig into"
-	cont "anything..."
+	cont "anything…"
 
 	para "It feels surreal"
 	line "holding onto the"
@@ -587,15 +790,28 @@ UnkiInspectionText2:
 
 	para "most well-known"
 	line "features."
+
+	para "Though, I do"
+	line "wonder…"
+
+	para "Does this beast"
+	line "eat with his"
+	cont "claws, or does"
+
+	para "he have a hidden"
+	line "mouth underneath"
+	cont "his big eye?"
+
+	para "Aaaaaanyways…"
 	done
 
 UnkiInspectionText3:
-	text "Huh... This guy"
+	text "Huh… This guy"
 	line "is a lot fatter"
 	cont "than how he is"
 
-	para "described in the"
-	line "rumors."
+	para "depicted in the"
+	line "drawing."
 
 	para "Makes sense,"
 	line "though."
@@ -606,6 +822,10 @@ UnkiInspectionText3:
 
 	para "make him gain a"
 	line "few pounds."
+
+	para "But despite that,"
+	line "he does look quite"
+	cont "the same."
 
 	para "Let me note this"
 	line "down real quick..."
@@ -643,3 +863,44 @@ UnkiInspectionEnd:
 	para "Here, have this"
 	line "as thanks."
 	done
+
+BerserkGeneText:
+    text "This Berserk Gene"
+    line "was found during"
+    cont "one of our"
+
+    para "expeditions at"
+    line "Cerulean Cave" 
+    cont "in the Kanto"
+
+    para "region."
+
+    para "We are not sure"
+    line "what this does"
+    cont "nor why it was"
+
+    para "there. But I"
+    line "feel like you"
+    cont "could find a"
+
+    para "use for this."
+    done
+
+ExtraEventEndText:
+    para "But anyways, our"
+    line "work here isn't"
+    cont "over."
+
+    para "There are still"
+    line "many things to"
+    cont "uncover here."
+
+    para "But regardless,"
+    line "thank you for your"
+    cont "contribution."
+
+    para "Please take care of"
+    line "the Unown King."
+
+    para "He really needs it."
+    done

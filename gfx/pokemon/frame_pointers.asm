@@ -355,6 +355,8 @@ FramesPointers:
 	dw MagikarpSaucyFrames
 	dw MagikarpRaindropFrames
 
+	dw UnownkingDrawingFrames
+
 	assert_table_length NUM_SPECIES + NUM_COSMETIC_FORMS
 
 	dw GyaradosRedFrames

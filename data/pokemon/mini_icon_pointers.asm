@@ -339,6 +339,8 @@ MiniIconPointers:
 
 	mini_icon Pichu ; Spiky
 
+	mini_icon UnownkingDrawing
+
 rept NUM_MAGIKARP - 1
 	mini_icon Magikarp
 endr

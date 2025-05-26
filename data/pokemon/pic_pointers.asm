@@ -359,6 +359,8 @@ PokemonPicPointers::
 	pics MagikarpSaucy
 	pics MagikarpRaindrop
 
+	pics UnownkingDrawing
+
 	assert_table_length NUM_SPECIES + NUM_COSMETIC_FORMS
 
 	pics GyaradosRed

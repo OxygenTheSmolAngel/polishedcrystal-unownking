@@ -302,6 +302,8 @@ rept NUM_UNOWN - 1
 	iconpal GRAY, BLUE
 endr
 
+    iconpal GRAY, BLUE ; UNOWN_KING, UNOWN_KING_DRAWING
+
 rept NUM_ARBOK - 1
 	iconpal PURPLE, BROWN
 endr
@@ -314,6 +316,7 @@ endr
 
 rept NUM_MAGIKARP - 1
 	iconpal RED, BROWN
+
 endr
 
 	assert_table_length NUM_SPECIES + NUM_COSMETIC_FORMS

@@ -309,6 +309,8 @@ MagikarpMask2AnimationExtra:
 MagikarpSaucyAnimationExtra:
 MagikarpRaindropAnimationExtra: INCLUDE "gfx/pokemon/magikarp/anim_idle.asm"
 
+UnownkingDrawingAnimationExtra: INCLUDE "gfx/pokemon/unownking_drawing/anim_idle.asm"
+
 DudunsparceTwoSegmentAnimationExtra:   INCLUDE "gfx/pokemon/dudunsparce_two_segment/anim_idle.asm"
 DudunsparceThreeSegmentAnimationExtra: INCLUDE "gfx/pokemon/dudunsparce_three_segment/anim_idle.asm"
 

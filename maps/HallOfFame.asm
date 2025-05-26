@@ -73,10 +73,9 @@ HallOfFameEntranceTrigger:
 	readvar VAR_BADGES
 	ifless 16, .NotATrueRematch
 	setevent EVENT_BEAT_ELITE_FOUR_AGAIN
-	clearevent EVENT_BEAT_UNKI
 	checkevent EVENT_BEAT_UNKI
-	iffalsefwd .UnkiReset
-.UnkiReset
+	iffalsefwd .SkipPhoneCall
+	clearevent EVENT_BEAT_UNKI
 	pause 50
 	cry UNOWN_KING
 	opentext

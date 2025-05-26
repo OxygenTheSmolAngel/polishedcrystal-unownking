@@ -46,29 +46,33 @@ Red:
 	setevent EVENT_GOT_MYSTICTICKET_FROM_RED
 .AlreadyHaveMysticTicket
 	closetext
-	special Special_FadeBlackQuickly
 	special Special_ReloadSpritesNoPalettes
 	disappear SILVERCAVEROOM3_RED
 	setflag ENGINE_RED_IN_MOUNT_SILVER
+	pause 10
+	special Special_FadeInQuickly
+	checkevent EVENT_UNKI_UNSEALED
+	iftruefwd .UnkiAlreadyUnsealed
+	special Special_FadeBlackQuickly
 	pause 50
 	playsound SFX_INTRO_UNOWN_3
 	waitsfx
-	pause 15
 	playsound SFX_INTRO_UNOWN_2
 	waitsfx
-	pause 15
 	playsound SFX_INTRO_UNOWN_1
 	waitsfx
-	pause 15
 	playsound SFX_INTRO_UNOWN_2
 	waitsfx
-	pause 15
-	playsound SFX_INTRO_UNOWN_3
-	playsound SFX_INTRO_UNOWN_2
-	playsound SFX_INTRO_UNOWN_1
-	playsound SFX_INTRO_UNOWN_2
+	; Call assembly so the fourth sound will play
+	callasm .PlayUnownSound3 ; playsound SFX_INTRO_UNOWN_3
+	pause 10
+	callasm .PlayUnownSound2 ; playsound SFX_INTRO_UNOWN_2
+	pause 10
+	callasm .PlayUnownSound1 ; playsound SFX_INTRO_UNOWN_1
+	pause 10
+	callasm .PlayUnownSound2 ; playsound SFX_INTRO_UNOWN_2
 	waitsfx
-	pause 25
+	pause 30
 	special Special_FadeInQuickly
 	opentext
 	writetext UnkiAwakenedText
@@ -84,6 +88,25 @@ Red:
 	special HealParty
 	setevent EVENT_BEAT_RED
 	end
+.UnkiAlreadyUnsealed:
+	special HealParty
+	setevent EVENT_BEAT_RED
+	end
+
+.PlayUnownSound1:
+	call SFXChannelsOff
+	ld de, SFX_INTRO_UNOWN_1
+	jmp PlaySFX
+
+.PlayUnownSound2:
+	call SFXChannelsOff
+	ld de, SFX_INTRO_UNOWN_2
+	jmp PlaySFX
+
+.PlayUnownSound3:
+	call SFXChannelsOff
+	ld de, SFX_INTRO_UNOWN_3
+	jmp PlaySFX
 
 .Text1: ; text > text
 	text "……"

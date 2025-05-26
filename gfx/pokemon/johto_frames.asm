@@ -187,3 +187,5 @@ WooperPaldeanFrames: INCLUDE "gfx/pokemon/wooper_paldean/frames.asm"
 
 UrsalunaPlainFrames:     INCLUDE "gfx/pokemon/ursaluna_plain/frames.asm"
 UrsalunaBloodmoonFrames: INCLUDE "gfx/pokemon/ursaluna_bloodmoon/frames.asm"
+
+UnownkingDrawingFrames:  INCLUDE "gfx/pokemon/unownking_drawing/frames.asm"

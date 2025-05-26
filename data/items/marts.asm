@@ -494,6 +494,7 @@ BattleTowerMart2:
 	db RARE_CANDY,   16
 	db PP_MAX,       64
 	db ABILITY_CAP,  32
+	db BOTTLE_CAP,   32
 	db WEAK_POLICY,  48
 	db BLUNDRPOLICY, 48
 	db SCOPE_LENS,   16

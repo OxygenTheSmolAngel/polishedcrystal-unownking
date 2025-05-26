@@ -1597,6 +1597,11 @@ UnownQuestionMini::     INCBIN "gfx/minis/unown_question.2bpp.lz"
 UnownQuestionMiniMask:: INCBIN "gfx/minis/unown_question_mask.1bpp.lz"
 UnownQuestionIcon::     INCBIN "gfx/icons/unown_question.2bpp.lz"
 
+SECTION "UnownkingDrawing Mini Icon", ROMX
+UnownkingDrawingMini::     INCBIN "gfx/minis/unownking_drawing.2bpp.lz"
+UnownkingDrawingMiniMask:: INCBIN "gfx/minis/unownking_drawing_mask.1bpp.lz"
+UnownkingDrawingIcon::     INCBIN "gfx/icons/unownking_drawing.2bpp.lz"
+
 SECTION "DudunsparceThreeSegment Mini Icon", ROMX
 DudunsparceThreeSegmentMini::     INCBIN "gfx/minis/dudunsparce_three_segment.2bpp.lz"
 DudunsparceThreeSegmentMiniMask:: INCBIN "gfx/minis/dudunsparce_three_segment_mask.1bpp.lz"

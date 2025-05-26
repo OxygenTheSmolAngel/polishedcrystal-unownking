@@ -1181,6 +1181,10 @@ SECTION "MagikarpRaindrop Pics", ROMX
 MagikarpRaindropFrontpic: INCBIN "gfx/pokemon/magikarp_raindrop/front.animated.2bpp.lz"
 MagikarpRaindropBackpic:  INCBIN "gfx/pokemon/magikarp_raindrop/back.2bpp.lz"
 
+SECTION "UnownkingDrawing Pics", ROMX
+UnownkingDrawingFrontpic: INCBIN "gfx/pokemon/unownking_drawing/front.animated.2bpp.lz"
+UnownkingDrawingBackpic:  INCBIN "gfx/pokemon/unownking_drawing/back.2bpp.lz"
+
 SECTION "MewtwoPlain Pics", ROMX
 MewtwoPlainFrontpic: INCBIN "gfx/pokemon/mewtwo_plain/front.animated.2bpp.lz"
 MewtwoPlainBackpic:  INCBIN "gfx/pokemon/mewtwo_plain/back.2bpp.lz"

@@ -309,6 +309,8 @@ MagikarpMask2Bitmasks:     INCLUDE "gfx/pokemon/magikarp_mask2/bitmask.asm"
 MagikarpSaucyBitmasks:     INCLUDE "gfx/pokemon/magikarp_saucy/bitmask.asm"
 MagikarpRaindropBitmasks:  INCLUDE "gfx/pokemon/magikarp_raindrop/bitmask.asm"
 
+UnownkingDrawingBitmasks:  INCLUDE "gfx/pokemon/unownking_drawing/bitmask.asm"
+
 DudunsparceTwoSegmentBitmasks:   INCLUDE "gfx/pokemon/dudunsparce_two_segment/bitmask.asm"
 DudunsparceThreeSegmentBitmasks: INCLUDE "gfx/pokemon/dudunsparce_three_segment/bitmask.asm"
 
