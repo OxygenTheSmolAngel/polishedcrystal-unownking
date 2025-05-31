@@ -45,7 +45,8 @@ DEF NUM_MP_EDIT_FIELDS EQU const_value
 	const ORIGIN_DELTARUNE ; 13
 	const ORIGIN_BLUESKY   ; 14
 	const ORIGIN_KIRBY64   ; 15
-	const ORIGIN_SHOVELKNIGHT ;16
+	const ORIGIN_SKNIGHT   ; 16
+	const ORIGIN_LULLABY   ; 17
 DEF NUM_SONG_ORIGINS EQU const_value
 
 ; SongArtists indexes (see data/music_player/song_artists.asm)
@@ -81,4 +82,5 @@ DEF NUM_SONG_ORIGINS EQU const_value
 	const COMPOSER_OXYGENTHESMOLANGEL            ; 1c
 	const COMPOSER_JUN_ISHIKAWA                  ; 1d
 	const COMPOSER_MANAMI_MATSUMAE               ; 1e
+	const COMPOSER_ADAM_MCHUMMUS                 ; 1f
 DEF NUM_SONG_ARTISTS EQU const_value

@@ -5,6 +5,7 @@ SoulHouseB3F_MapScriptHeader:
 
 	def_warp_events
 	warp_event  3,  4, SOUL_HOUSE_B2F, 3
+	warp_event  3, 17, SOUL_HOUSE_GRAVE, 1
 
 	def_coord_events
 

@@ -7,9 +7,9 @@ ENDM
 SpriteHeaders:
 ; entries correspond to SPRITE_* constants
 	table_width SPRITEDATA_LENGTH
-	overworld_sprite ChrisSpriteGFX, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite ChrisBikeSpriteGFX, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite ChrisSurfSpriteGFX, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite ChrisSpriteGFX, WALKING_SPRITE, PAL_OW_GRAY
+	overworld_sprite ChrisBikeSpriteGFX, WALKING_SPRITE, PAL_OW_GRAY
+	overworld_sprite ChrisSurfSpriteGFX, WALKING_SPRITE, PAL_OW_GRAY
 	overworld_sprite KrisSpriteGFX, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite KrisBikeSpriteGFX, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite KrisSurfSpriteGFX, WALKING_SPRITE, PAL_OW_BLUE
@@ -39,7 +39,7 @@ SpriteHeaders:
 	overworld_sprite BlaineSpriteGFX, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite BlueSpriteGFX, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite RedSpriteGFX, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite LeafSpriteGFX, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite LeafSpriteGFX, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite YellowSpriteGFX, WALKING_SPRITE, PAL_OW_ORANGE
 	overworld_sprite OakSpriteGFX, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite ElmSpriteGFX, WALKING_SPRITE, PAL_OW_BROWN

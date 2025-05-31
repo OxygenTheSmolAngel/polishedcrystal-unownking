@@ -402,17 +402,18 @@ ENDM
 	map_const SOUL_HOUSE_B1F,                             10,  9 ; 12
 	map_const SOUL_HOUSE_B2F,                             10,  9 ; 13
 	map_const SOUL_HOUSE_B3F,                              4,  9 ; 14
-	map_const LAV_RADIO_TOWER_1F,                         10,  4 ; 15
-	map_const LAV_RADIO_TOWER_2F,                          9,  4 ; 16
-	map_const LAV_RADIO_TOWER_3F,                          9,  4 ; 17
-	map_const LAV_RADIO_TOWER_4F,                          9,  4 ; 18
-	map_const LAV_RADIO_TOWER_5F,                          7,  4 ; 19
-	map_const HAUNTED_RADIO_TOWER_2F,                      9,  4 ; 20
-	map_const HAUNTED_RADIO_TOWER_3F,                      9,  4 ; 21
-	map_const HAUNTED_RADIO_TOWER_4F,                      9,  4 ; 22
-	map_const HAUNTED_RADIO_TOWER_5F,                      8,  9 ; 23
-	map_const HAUNTED_RADIO_TOWER_6F,                      8,  9 ; 24
-	map_const ROUTE_16_WEST,                              31, 13 ; 25
+	map_const SOUL_HOUSE_GRAVE,                           11, 10 ; 15
+	map_const LAV_RADIO_TOWER_1F,                         10,  4 ; 16
+	map_const LAV_RADIO_TOWER_2F,                          9,  4 ; 17
+	map_const LAV_RADIO_TOWER_3F,                          9,  4 ; 18
+	map_const LAV_RADIO_TOWER_4F,                          9,  4 ; 19
+	map_const LAV_RADIO_TOWER_5F,                          7,  4 ; 20
+	map_const HAUNTED_RADIO_TOWER_2F,                      9,  4 ; 21
+	map_const HAUNTED_RADIO_TOWER_3F,                      9,  4 ; 22
+	map_const HAUNTED_RADIO_TOWER_4F,                      9,  4 ; 23
+	map_const HAUNTED_RADIO_TOWER_5F,                      8,  9 ; 24
+	map_const HAUNTED_RADIO_TOWER_6F,                      8,  9 ; 25
+	map_const ROUTE_16_WEST,                              31, 13 ; 26
 
 	newgroup                                                     ; 19
 	map_const ROUTE_28,                                   19,  9 ;  1

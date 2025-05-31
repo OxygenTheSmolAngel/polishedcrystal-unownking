@@ -6,7 +6,15 @@ ScorchVx
 (The design is from FNF: The Unown King's Curse)
 
 # Custom Unown King Sprites by:
-Oxygen (Me! :D )
+Oxygen (Me)
+
+Gold (Lost Silver) Sprites by:
+Nikki (from the Crystal Clear Discord Server)
+- Sprites edited by: Oxygen (Me)
+
+Celebi (Lost Silver) sprites by:
+GushieGMan
+- Sprite animation edit by: Oxygen (Me)
 
 -------------
 # Polished Crystal Credits

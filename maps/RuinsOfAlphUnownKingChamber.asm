@@ -5,8 +5,8 @@ RuinsOfAlphUnownKingChamber_MapScriptHeader:
 callback MAPCALLBACK_OBJECTS, RuinsOfAlphUnownKingCallback
 
 	def_warp_events
-	warp_event 11, 32, RUINS_OF_ALPH_INNER_CHAMBER, 3
-	warp_event 12, 32, RUINS_OF_ALPH_INNER_CHAMBER, 4
+	warp_event 12, 32, RUINS_OF_ALPH_INNER_CHAMBER, 3
+	warp_event 13, 32, RUINS_OF_ALPH_INNER_CHAMBER, 4
 	warp_event 12, 37, RUINS_OF_ALPH_INNER_CHAMBER, 12
 	
 	def_coord_events

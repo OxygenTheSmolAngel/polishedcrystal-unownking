@@ -355,7 +355,9 @@ BitmasksPointers:
 	dw MagikarpSaucyBitmasks
 	dw MagikarpRaindropBitmasks
 
-    dw UnownkingDrawingBitmasks
+    dw UnownkingClassicBitmasks
+
+    dw CelebiLostBitmasks
 
 	assert_table_length NUM_SPECIES + NUM_COSMETIC_FORMS
 

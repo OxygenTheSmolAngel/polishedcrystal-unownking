@@ -326,6 +326,7 @@
 	const EVENT_GOT_FULL_RESTORE_FROM_LIGHTHOUSE
 	const EVENT_GOT_ICY_ROCK_FROM_LORELEI
 	const EVENT_FINAL_BATTLE_WITH_LYRA
+	const EVENT_GIFTED_GOLD_CELEBI
 
 ; Kanto story events
 	const EVENT_GOT_NUGGET_FROM_GUY
@@ -1644,6 +1645,8 @@
 ; Lawrence
 	const EVENT_BEAT_LAWRENCE
 	const EVENT_BEAT_LAWRENCE_AGAIN
+; Gold
+	const EVENT_BEAT_GOLD
 
 ; Sprite visibility flags
 ; When these events are cleared, the sprite becomes visible; when set, the sprite is hidden.

@@ -200,6 +200,7 @@
 	const MUSIC_FAINT_COURAGE                  ; c4
 	const MUSIC_ZERO_TWO                       ; c5
 	const MUSIC_IRON_WHALE                     ; c6
+	const MUSIC_MONOCHROME                     ; c7
 DEF NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for these values (see data/maps/alternate_music.asm)

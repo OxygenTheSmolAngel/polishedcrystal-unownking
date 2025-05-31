@@ -323,6 +323,10 @@ endc
 
 else
 
+    clearevent EVENT_UNKI_CHAMBER_UNLOCKED
+    clearevent EVENT_CAUGHT_UNKI
+    clearevent EVENT_BEAT_UNKI
+    clearevent EVENT_UNKI_CHAMBER_UNLOCKED
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftruefwd .NormalRadio
 	checkevent EVENT_LISTENED_TO_INITIAL_RADIO

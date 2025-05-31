@@ -164,6 +164,10 @@ UnownQuestionFrames:    INCLUDE "gfx/pokemon/unown_question/frames.asm"
 PichuPlainFrames: INCLUDE "gfx/pokemon/pichu_plain/frames.asm"
 PichuSpikyFrames: INCLUDE "gfx/pokemon/pichu_spiky/frames.asm"
 
+UnownkingClassicFrames:  INCLUDE "gfx/pokemon/unownking_drawing/frames.asm"
+
+CelebiLostFrames:     INCLUDE "gfx/pokemon/celebi_lost/frames.asm"
+
 SlowkingPlainFrames:    INCLUDE "gfx/pokemon/slowking_plain/frames.asm"
 SlowkingGalarianFrames: INCLUDE "gfx/pokemon/slowking_galarian/frames.asm"
 
@@ -187,5 +191,3 @@ WooperPaldeanFrames: INCLUDE "gfx/pokemon/wooper_paldean/frames.asm"
 
 UrsalunaPlainFrames:     INCLUDE "gfx/pokemon/ursaluna_plain/frames.asm"
 UrsalunaBloodmoonFrames: INCLUDE "gfx/pokemon/ursaluna_bloodmoon/frames.asm"
-
-UnownkingDrawingFrames:  INCLUDE "gfx/pokemon/unownking_drawing/frames.asm"

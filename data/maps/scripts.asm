@@ -613,6 +613,9 @@ INCLUDE "maps/SoulHouseB1F.asm"
 INCLUDE "maps/SoulHouseB2F.asm"
 INCLUDE "maps/SoulHouseB3F.asm"
 
+SECTION "Soul House Grave Script", ROMX
+
+INCLUDE "maps/SoulHouseGrave.asm"
 
 SECTION "Lav Radio Tower Scripts", ROMX
 

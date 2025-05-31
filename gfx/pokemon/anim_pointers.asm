@@ -355,7 +355,9 @@ AnimationPointers:
 	dw MagikarpSaucyAnimation
 	dw MagikarpRaindropAnimation
 
-	dw UnownkingDrawingAnimation
+	dw UnownkingClassicAnimation
+
+    dw CelebiLostAnimation
 
 	assert_table_length NUM_SPECIES + NUM_COSMETIC_FORMS
 

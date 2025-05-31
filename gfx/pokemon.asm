@@ -888,6 +888,11 @@ SECTION "Celebi Pics", ROMX
 CelebiFrontpic: INCBIN "gfx/pokemon/celebi/front.animated.2bpp.lz"
 CelebiBackpic:  INCBIN "gfx/pokemon/celebi/back.2bpp.lz"
 
+SECTION "Celebi Lost Pics", ROMX
+CelebiLostFrontpic: INCBIN "gfx/pokemon/celebi_lost/front.animated.2bpp.lz"
+CelebiLostBackpic:  INCBIN "gfx/pokemon/celebi_lost/back.2bpp.lz"
+
+
 SECTION "Azurill Pics", ROMX
 AzurillFrontpic: INCBIN "gfx/pokemon/azurill/front.animated.2bpp.lz"
 AzurillBackpic:  INCBIN "gfx/pokemon/azurill/back.2bpp.lz"
@@ -1061,7 +1066,10 @@ UnownQuestionBackpic:  INCBIN "gfx/pokemon/unown_question/back.2bpp.lz"
 
 SECTION "Unownking Pics", ROMX
 UnownkingFrontpic: INCBIN "gfx/pokemon/unownking/front.animated.2bpp.lz"
+UnownkingClassicFrontpic: INCBIN "gfx/pokemon/unownking_drawing/front.animated.2bpp.lz"
 UnownkingBackpic:  INCBIN "gfx/pokemon/unownking/back.2bpp.lz"
+UnownkingClassicBackpic:  INCBIN "gfx/pokemon/unownking_drawing/back.2bpp.lz"
+
 
 SECTION "Pikachu Pics", ROMX
 PikachuPlainFrontpic: INCBIN "gfx/pokemon/pikachu_plain/front.animated.2bpp.lz"
@@ -1180,10 +1188,6 @@ MagikarpSaucyBackpic:  INCBIN "gfx/pokemon/magikarp_saucy/back.2bpp.lz"
 SECTION "MagikarpRaindrop Pics", ROMX
 MagikarpRaindropFrontpic: INCBIN "gfx/pokemon/magikarp_raindrop/front.animated.2bpp.lz"
 MagikarpRaindropBackpic:  INCBIN "gfx/pokemon/magikarp_raindrop/back.2bpp.lz"
-
-SECTION "UnownkingDrawing Pics", ROMX
-UnownkingDrawingFrontpic: INCBIN "gfx/pokemon/unownking_drawing/front.animated.2bpp.lz"
-UnownkingDrawingBackpic:  INCBIN "gfx/pokemon/unownking_drawing/back.2bpp.lz"
 
 SECTION "MewtwoPlain Pics", ROMX
 MewtwoPlainFrontpic: INCBIN "gfx/pokemon/mewtwo_plain/front.animated.2bpp.lz"

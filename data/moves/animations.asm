@@ -1999,9 +1999,9 @@ BattleAnim_BerserkChomp:
 	anim_bgp $1b
 	anim_obp0 $c0
 	anim_bgeffect ANIM_BG_SHAKE_SCREEN_X, $20, $2, $0
-	anim_obj ANIM_OBJ_BITE, -15, 0,   14, 5, $a8
-	anim_obj ANIM_OBJ_BITE, -15, 0,   14, 5, $28
-	anim_obj ANIM_OBJ_BITE, -15, 0,   14, 5, $38
+	anim_obj ANIM_OBJ_BITE, -15, 0,    7, 0, $a8
+	anim_obj ANIM_OBJ_BITE, -15, 0,    7, 0, $28
+	anim_obj ANIM_OBJ_BITE, -15, 0,    7, 0, $38
 	anim_wait 8
 	anim_sound 0, 1, SFX_BITE
 	anim_obj ANIM_OBJ_HIT_BIG_YFIX, -14, 0,   6, 0, $18

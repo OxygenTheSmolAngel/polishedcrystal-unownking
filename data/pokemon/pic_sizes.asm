@@ -375,6 +375,8 @@ INCLUDE "gfx/pokemon/magikarp_raindrop/front.dimensions"
 
 INCLUDE "gfx/pokemon/unownking_drawing/front.dimensions"
 
+INCLUDE "gfx/pokemon/celebi_lost/front.dimensions"
+
 	assert_list_length NUM_SPECIES + NUM_COSMETIC_FORMS
 
 INCLUDE "gfx/pokemon/gyarados_red/front.dimensions"

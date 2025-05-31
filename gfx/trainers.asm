@@ -447,9 +447,6 @@ LawrencePic: INCBIN "gfx/trainers/lawrence.2bpp.lz"
 SECTION "ReiPic", ROMX
 ReiPic: INCBIN "gfx/trainers/rei.2bpp.lz"
 
-SECTION "OxygenPic", ROMX
-OxygenPic: INCBIN "gfx/trainers/oxygen.2bpp.lz"
-
 SECTION "OmastarFossilPic", ROMX
 OmastarFossilPic: INCBIN "gfx/trainers/omastar_fossil.2bpp.lz"
 

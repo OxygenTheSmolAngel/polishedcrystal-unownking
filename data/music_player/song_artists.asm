@@ -31,4 +31,5 @@ SongArtists:
 	li "OxygenTheSmolAngel"
 	li "Jun Ishikawa"
 	li "Manami Matsumae"
+	li "Adam McHummus"
 	assert_list_length NUM_SONG_ARTISTS

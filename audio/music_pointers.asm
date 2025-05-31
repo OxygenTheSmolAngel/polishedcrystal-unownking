@@ -200,4 +200,5 @@ Music:
 	dba Music_FaintCourage
 	dba Music_ZeroTwo
 	dba Music_IronWhale
+	dba Music_Monochrome
 	assert_table_length NUM_MUSIC_SONGS

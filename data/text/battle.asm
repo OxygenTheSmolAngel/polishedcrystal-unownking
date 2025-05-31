@@ -1635,8 +1635,12 @@ GetOutText:
 	line "Get out…"
 	prompt
 
-CarrieFinalPkmnText:
 CalFinalPkmnText:
+    text "NO MORE..."
+    line "PLEASE..."
+    prompt
+
+CarrieFinalPkmnText:
 JackyFinalPkmnText:
 	text "I still have one"
 	line "#mon!"
@@ -2104,12 +2108,4 @@ LawrenceFinalPkmnText:
 ReiFinalPkmnText:
 	text "I'm not done yet."
 	prompt
-
-OxygenFinalPkmnText:
-	text "Come on, Unki!"
-	line "You can do this,"
-	cont "my dear beast!"
-	prompt
-
-
 

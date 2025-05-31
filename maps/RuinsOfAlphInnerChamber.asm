@@ -16,16 +16,17 @@ RuinsOfAlphInnerChamber_MapScriptHeader:
 	warp_event  4, 27, RUINS_OF_ALPH_OMANYTE_CHAMBER, 4
 	warp_event 15, 30, RUINS_OF_ALPH_AERODACTYL_CHAMBER, 3
 	warp_event 16, 30, RUINS_OF_ALPH_AERODACTYL_CHAMBER, 4
-	warp_event  7,  1, RUINS_OF_ALPH_UNOWNKING_CHAMBER, 1
-	warp_event  8,  1, RUINS_OF_ALPH_UNOWNKING_CHAMBER, 2
-	warp_event  8,  7, RUINS_OF_ALPH_UNOWNKING_CHAMBER, 3
+	warp_event  9,  1, RUINS_OF_ALPH_UNOWNKING_CHAMBER, 1
+	warp_event 10,  1, RUINS_OF_ALPH_UNOWNKING_CHAMBER, 2
+	warp_event  9,  7, RUINS_OF_ALPH_UNOWNKING_CHAMBER, 3
 
 	def_coord_events
 
 	def_bg_events
 	bg_event  2,  9, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
 	bg_event  5,  9, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
-	bg_event  8,  5, BGEVENT_READ,     RuinsOfAlphUnownKing
+	bg_event  8,  9, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
+	bg_event  9,  5, BGEVENT_READ,     RuinsOfAlphUnownKingCheck
 	bg_event 11,  9, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
 	bg_event 14,  9, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
 	bg_event 17,  9, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
@@ -71,8 +72,8 @@ RuinsofAlphInnerChamberPitCallback:
 .FloorOpen:
     checkevent EVENT_CAUGHT_UNKI
     iftruefwd .UnkiCaught
-	changeblock 7, 1, $29
-	changeblock 8, 1, $2A
+	changeblock  9, 1, $29
+	changeblock 10, 1, $2A
 	endcallback
 
 .UnkiCaught:
@@ -85,7 +86,11 @@ RuinsOfAlphInnerChamberStrangePresenceScript:
 	clearevent EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_FISHER
 	end
 
-RuinsOfAlphUnownKing:
+RuinsOfAlphUnownKingCheck:
+	readvar VAR_UNOWNCOUNT
+	ifequalfwd NUM_UNOWN, .RuinsOfAlphUnownKing
+	end
+.RuinsOfAlphUnownKing:
 	faceplayer
 	checkevent EVENT_CAUGHT_UNKI
 	iftruefwd .UnkiLiberated
@@ -118,8 +123,8 @@ RuinsOfAlphUnownKing:
 	playsound SFX_STRENGTH
 	earthquake 15
 	setevent EVENT_UNKI_CHAMBER_UNLOCKED
-	changeblock 7, 1, $29
-	changeblock 8, 1, $2A
+	changeblock  9, 1, $29
+	changeblock 10, 1, $2A
 	refreshmap
 	opentext
 	writetext SecretPassageOpenedText
@@ -234,10 +239,6 @@ UnkiStatueText:
 	para "The statue seems"
 	line "to be shaking"
 	cont "violently!"
-	done
-
-UnkiEncounterText:
-	text "Kiiiiiiiingg!!!"
 	done
 
 UnkiStatueEndText:

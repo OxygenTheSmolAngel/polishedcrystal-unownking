@@ -22,5 +22,6 @@ SongOrigins:
 	li "Deltarune"
 	li "Bluesky"
 	li "Kirby 64"
-	li "Shovel Knight"
+	li "ShovelKnight"
+	li "Hypno'sLullaby"
 	assert_list_length NUM_SONG_ORIGINS

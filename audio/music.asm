@@ -580,4 +580,7 @@ INCLUDE "audio/music/kirby/zerotwo.asm"
 SECTION "Song - shovelknight/ironwhale", ROMX
 INCLUDE "audio/music/shovelknight/ironwhale.asm"
 
+SECTION "Song - fnf/monochrome", ROMX
+INCLUDE "audio/music/fnf/monochrome.asm"
+
 ENDSECTION

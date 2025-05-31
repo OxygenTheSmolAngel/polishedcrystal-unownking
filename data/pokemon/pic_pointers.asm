@@ -359,7 +359,9 @@ PokemonPicPointers::
 	pics MagikarpSaucy
 	pics MagikarpRaindrop
 
-	pics UnownkingDrawing
+	pics UnownkingClassic
+
+	pics CelebiLost
 
 	assert_table_length NUM_SPECIES + NUM_COSMETIC_FORMS
 

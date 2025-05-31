@@ -7,7 +7,7 @@
 	db NO_ITEM, LEFTOVERS ; held items
 	dn GENDER_F0, HATCH_UNKNOWN ; gender ratio, step cycles to hatch
 
-	abilities_for UNOWNKING, INTIMIDATE, THICK_FAT, BATTLE_ARMOR
+	abilities_for UNOWN_KING, INTIMIDATE, THICK_FAT, BATTLE_ARMOR
 	db GROWTH_SLOW ; growth rate
 	dn EGG_NONE, EGG_NONE ; egg groups
 

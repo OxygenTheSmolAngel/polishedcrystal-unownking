@@ -60,6 +60,7 @@ CosmeticSpeciesAndFormTable:
 	dp MAGIKARP,   MAGIKARP_SAUCY_FORM
 	dp MAGIKARP,   MAGIKARP_RAINDROP_FORM
 	dp UNOWN_KING, UNOWN_KING_CLASSIC_FORM
+	dp CELEBI,     CELEBI_LOST_FORM
 	assert_table_length NUM_COSMETIC_FORMS
 	; fallthrough
 

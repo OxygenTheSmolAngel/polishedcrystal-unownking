@@ -701,6 +701,7 @@ ENDM
 	map_attributes SoulHouseB1F, SOUL_HOUSE_B1F, $6c, 0
 	map_attributes SoulHouseB2F, SOUL_HOUSE_B2F, $6c, 0
 	map_attributes SoulHouseB3F, SOUL_HOUSE_B3F, $6c, 0
+	map_attributes SoulHouseGrave, SOUL_HOUSE_GRAVE, $6c, 0
 	map_attributes LavRadioTower1F, LAV_RADIO_TOWER_1F, $0, 0
 	map_attributes LavRadioTower2F, LAV_RADIO_TOWER_2F, $0, 0
 	map_attributes LavRadioTower3F, LAV_RADIO_TOWER_3F, $0, 0
