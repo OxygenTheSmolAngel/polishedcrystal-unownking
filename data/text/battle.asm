@@ -1636,10 +1636,6 @@ GetOutText:
 	prompt
 
 CalFinalPkmnText:
-    text "NO MORE..."
-    line "PLEASE..."
-    prompt
-
 CarrieFinalPkmnText:
 JackyFinalPkmnText:
 	text "I still have one"
@@ -2108,4 +2104,9 @@ LawrenceFinalPkmnText:
 ReiFinalPkmnText:
 	text "I'm not done yet."
 	prompt
+
+GoldFinalPkmnText:
+    text "NO MORE..."
+    line "PLEASE..."
+    prompt
 

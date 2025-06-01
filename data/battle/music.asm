@@ -51,7 +51,7 @@ BattleMusic_Trainers:
 	db KATY,             MUSIC_GYM_LEADER_BATTLE_SWSH
 	db WALKER,           MUSIC_JOHTO_GYM_LEADER_BATTLE
 	db LAWRENCE,         MUSIC_ZINNIA_BATTLE_ORAS
-	db CAL,              MUSIC_MONOCHROME
+	db GOLD,             MUSIC_MONOCHROME
 	db -1
 
 BattleMusic_Legendaries:

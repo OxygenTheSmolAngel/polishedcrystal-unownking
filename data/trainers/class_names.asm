@@ -154,4 +154,6 @@ TrainerClassNames::
 	li "Student"          ; IMAKUNI
 	li "Collector"        ; LAWRENCE
 	li "Shrine"           ; REI
+	li "<PK><MN> Trainer" ; GOLD
+
 	assert_list_length NUM_TRAINER_CLASSES

@@ -1138,18 +1138,20 @@ DEF CRYS EQU __trainer_class__
 
 	trainerclass REI ; 9a
 
+	trainerclass GOLD ; 9b
+
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1
 
-	trainerclass OMASTAR_FOSSIL ; 9b
+	trainerclass OMASTAR_FOSSIL ; 9c
 
-	trainerclass KABUTOPS_FOSSIL ; 9c
+	trainerclass KABUTOPS_FOSSIL ; 9d
 
-	trainerclass AERODACTYL_FOSSIL ; 9d
+	trainerclass AERODACTYL_FOSSIL ; 9e
 
-	trainerclass CUBONE_ARMOR ; 9e
+	trainerclass CUBONE_ARMOR ; 9f
 
-	trainerclass METEORITE ; 9f
+	trainerclass METEORITE ; a0
 
-	trainerclass SILHOUETTE ; a0
+	trainerclass SILHOUETTE ; a1
 
 DEF NUM_TRAINER_CLASS_PICS EQU __trainer_class__ - 1

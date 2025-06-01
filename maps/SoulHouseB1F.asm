@@ -39,7 +39,7 @@ SoulHouseGraveEvent:
 	waitbutton
 	closetext
 	winlosstext GoldWinLossText, GoldWinLossText
-	loadtrainer CAL, 1
+	loadtrainer GOLD, 1
 	startbattle
 	reloadmapafterbattle
     playmusic MUSIC_POKE_FLUTE_CHANNEL
@@ -161,7 +161,7 @@ GoldCelebiGift:
 	line "DO A MUCH BETTER"
 	cont "JOB AT TAKING CARE"
 
-	para "OF IF THAN ME..."
+	para "OF IT THAN ME..."
 	done
 
 GoldText_GotShinyCelebi:

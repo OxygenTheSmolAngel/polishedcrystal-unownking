@@ -1990,67 +1990,124 @@ Music_Monochrome_Ch4:
 	drum_note 5, 1
 	rest 16
 	rest 1
-	drum_note 12, 4
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
 	drum_note 3, 4
-	drum_note 12, 4
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
 	drum_note 3, 4
-	drum_note 12, 4
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	octave 8
+	drum_note 12, 2
+	drum_note 12, 2
 	drum_note 3, 4
-	drum_note 12, 4
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	rest 8
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
 	drum_note 3, 4
-	drum_note 12, 4
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
 	drum_note 3, 4
-	drum_note 12, 4
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
 	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 12
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
-	drum_note 3, 4
-	drum_note 12, 4
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 3, 2
+	drum_note 12, 2
+	drum_note 12, 2
 	drum_note 3, 4
 	drum_note 12, 4
 	drum_note 3, 4
@@ -2168,7 +2225,6 @@ Music_Monochrome_Ch4:
 	drum_note 10, 4
 	drum_note 12, 4
 	drum_note 3, 12
-	octave 8
 	drum_note 7, 8
 	drum_note 7, 8
 	drum_note 7, 8
