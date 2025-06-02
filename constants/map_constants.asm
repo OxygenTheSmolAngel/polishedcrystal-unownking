@@ -402,7 +402,7 @@ ENDM
 	map_const SOUL_HOUSE_B1F,                             10,  9 ; 12
 	map_const SOUL_HOUSE_B2F,                             10,  9 ; 13
 	map_const SOUL_HOUSE_B3F,                              4,  9 ; 14
-	map_const SOUL_HOUSE_GRAVE,                           11, 10 ; 15
+	map_const SOUL_HOUSE_GRAVE,                           17, 17 ; 15
 	map_const LAV_RADIO_TOWER_1F,                         10,  4 ; 16
 	map_const LAV_RADIO_TOWER_2F,                          9,  4 ; 17
 	map_const LAV_RADIO_TOWER_3F,                          9,  4 ; 18
