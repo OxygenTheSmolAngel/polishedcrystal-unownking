@@ -4,6 +4,7 @@ SongArtists:
 	li "Junichi Masuda"
 	li "Go Ichinose"
 	li "Junichi Masuda,     Go Ichinose"
+	li "Go Ichinose,        Jun Ishikawa"
 	li "Morikazu Aoki"
 	li "Shota Kageyama"
 	li "Junichi Masuda,     Shota Kageyama"
