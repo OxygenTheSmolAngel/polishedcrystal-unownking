@@ -364,7 +364,7 @@ PryceGroup:
 	tr_mon 38, SNEASEL
 		tr_evs 224 Atk
 		tr_moves SWORDS_DANCE, ICICLE_CRASH, SCREECH, SLASH
-	tr_mon 41, MR__MIME | GALARIAN_FORM
+	tr_mon 41, MR__MIME @ KINGS_ROCK | GALARIAN_FORM
 		tr_evs 224 SAt
 		tr_moves REFLECT, DOUBLE_TEAM, PSYBEAM, ICE_SHARD
 	tr_mon 40, DELIBIRD
@@ -378,7 +378,7 @@ PryceGroup:
 	def_trainer 2, "Pryce"
 	tr_mon 73, DEWGONG @ FOCUS_BAND
 		tr_moves PROTECT, TOXIC, SURF, ICE_BEAM
-	tr_mon 74, MR__RIME @ KINGS_ROCK
+	tr_mon 74, MR__RIME @ NEVERMELTICE
 		tr_moves REFLECT, HYPNOSIS, DAZZLINGLEAM, ICE_BEAM
 	tr_mon 72, WEAVILE @ KINGS_ROCK
 		tr_moves SWORDS_DANCE, ICICLE_CRASH, SLASH, CRUNCH
@@ -396,7 +396,7 @@ ClairGroup:
 
 	def_trainer_class CLAIR
 	def_trainer 1, "Clair"
-	tr_mon 43, GYARADOS, FEMALE
+	tr_mon 43, GYARADOS @ DRAGON_FANG, FEMALE
 		tr_evs 4 Atk, 252 Spe
 		tr_moves CRUNCH, THRASH, DRAGON_PULSE, AQUA_TAIL
 	tr_mon 45, YANMEGA, FEMALE
@@ -418,7 +418,7 @@ endc
 	tr_mon 44, DRAGONAIR, FEMALE
 		tr_evs 128 HP, 128 SAt
 		tr_moves THUNDER_WAVE, THUNDERBOLT, ICE_BEAM, DRAGON_PULSE
-	tr_mon 46, LAPRAS, FEMALE
+	tr_mon 46, LAPRAS @ DAMP_ROCK, FEMALE
 		tr_evs 4 Sat, 252 HP
 		tr_moves RAIN_DANCE, DRAGON_PULSE, THUNDER, SING
 	tr_mon 47, KINGDRA @ SHELL_BELL, FEMALE
@@ -702,17 +702,17 @@ BrockGroup:
 	end_trainer
 
 	def_trainer 2, "Brock"
-	tr_mon 74, ONIX @ SOFT_SAND
+	tr_mon 84, ONIX @ SOFT_SAND
 		tr_moves IRON_HEAD, ROCK_SLIDE, EARTHQUAKE, SANDSTORM
-	tr_mon 73, RHYPERIOR @ KINGS_ROCK
+	tr_mon 83, RHYPERIOR @ KINGS_ROCK
 		tr_moves AVALANCHE, ROCK_SLIDE, EARTHQUAKE, MEGAHORN
-	tr_mon 72, OMASTAR @ MYSTIC_WATER
+	tr_mon 82, OMASTAR @ MYSTIC_WATER
 		tr_moves ANCIENTPOWER, SURF, EARTH_POWER, SPIKES
-	tr_mon 72, KABUTOPS @ MIRACLE_SEED
+	tr_mon 82, KABUTOPS @ MIRACLE_SEED
 		tr_moves SLASH, SURF, ENDURE, GIGA_DRAIN
-	tr_mon 73, AERODACTYL @ QUICK_CLAW
+	tr_mon 83, AERODACTYL @ QUICK_CLAW
 		tr_moves STONE_EDGE, EARTHQUAKE, AERIAL_ACE, CRUNCH
-	tr_mon 75, GOLEM @ LEFTOVERS
+	tr_mon 85, GOLEM @ LEFTOVERS
 		tr_moves EXPLOSION, BODY_SLAM, STONE_EDGE, EARTHQUAKE
 	end_trainer
 
@@ -743,17 +743,17 @@ MistyGroup:
 	end_trainer
 
 	def_trainer 2, "Misty"
-	tr_mon 73, GOLDUCK @ TWISTEDSPOON
+	tr_mon 83, GOLDUCK @ TWISTEDSPOON
 		tr_moves PSYCHIC_M, SCALD, ICE_BEAM, CALM_MIND
-	tr_mon 72, QUAGSIRE
+	tr_mon 82, QUAGSIRE
 		tr_moves EARTHQUAKE, SCALD, RECOVER, TOXIC
-	tr_mon 72, KINGLER @ KINGS_ROCK
+	tr_mon 82, KINGLER @ KINGS_ROCK
 		tr_moves SWORDS_DANCE, CRABHAMMER, X_SCISSOR, ROCK_SLIDE
-	tr_mon 73, LANTURN @ NEVERMELTICE
+	tr_mon 83, LANTURN @ NEVERMELTICE
 		tr_moves SURF, THUNDERBOLT, ICE_BEAM, CONFUSE_RAY
-	tr_mon 74, OCTILLERY @ CHARCOAL
+	tr_mon 84, OCTILLERY @ CHARCOAL
 		tr_moves FIRE_BLAST, ICE_BEAM, HYDRO_PUMP, POWER_WHIP
-	tr_mon 75, STARMIE @ LEFTOVERS
+	tr_mon 85, STARMIE @ LEFTOVERS
 		tr_moves RECOVER, PSYCHIC_M, THUNDERBOLT, SURF
 	end_trainer
 
@@ -784,17 +784,17 @@ LtSurgeGroup:
 	end_trainer
 
 	def_trainer 2, "Lt.Surge"
-	tr_mon 74, ELECTIVIRE @ BLACK_BELT
+	tr_mon 84, ELECTIVIRE @ BLACK_BELT
 		tr_moves CROSS_CHOP, THUNDERPUNCH, LIGHT_SCREEN, WILD_CHARGE
-	tr_mon 72, ELECTRODE @ SILK_SCARF
+	tr_mon 82, ELECTRODE @ SILK_SCARF
 		tr_moves REFLECT, DOUBLE_TEAM, SWIFT, EXPLOSION
-	tr_mon 73, JOLTEON @ NEVERMELTICE
+	tr_mon 83, JOLTEON @ NEVERMELTICE
 		tr_moves HP_ICE, THUNDER_WAVE, HYPER_VOICE, THUNDERBOLT
-	tr_mon 72, MAGNEZONE @ CHARCOAL
+	tr_mon 82, MAGNEZONE @ CHARCOAL
 		tr_moves LIGHT_SCREEN, DOUBLE_TEAM, HP_FIRE, THUNDERBOLT
-	tr_mon 73, LANTURN @ LEFTOVERS
+	tr_mon 83, LANTURN @ LEFTOVERS
 		tr_moves SURF, ICE_BEAM, THUNDERBOLT, RECOVER
-	tr_mon 75, RAICHU @ BRIGHTPOWDER
+	tr_mon 85, RAICHU @ BRIGHTPOWDER
 		tr_moves THUNDER_WAVE, NASTY_PLOT, THUNDERBOLT, FOCUS_BLAST
 	end_trainer
 
@@ -835,21 +835,21 @@ endc
 	end_trainer
 
 	def_trainer 2, "Erika"
-	tr_mon 72, SUNFLORA @ BRIGHTPOWDER
+	tr_mon 82, SUNFLORA @ BRIGHTPOWDER
 if DEF(FAITHFUL)
 		tr_moves SUNNY_DAY, LEECH_SEED, GIGA_DRAIN, EARTH_POWER
 else
 		tr_moves SUNNY_DAY, LEECH_SEED, GIGA_DRAIN, FIRE_BLAST
 endc
-	tr_mon 73, TANGROWTH @ LEFTOVERS
+	tr_mon 83, TANGROWTH @ LEFTOVERS
 		tr_moves EARTHQUAKE, SWORDS_DANCE, GIGA_DRAIN, SLEEP_POWDER
-	tr_mon 73, VICTREEBEL @ POISON_BARB
+	tr_mon 83, VICTREEBEL @ POISON_BARB
 		tr_moves SWORDS_DANCE, GIGA_DRAIN, SLUDGE_BOMB, SEED_BOMB
-	tr_mon 74, LEAFEON @ MIRACLE_SEED
+	tr_mon 84, LEAFEON @ MIRACLE_SEED
 		tr_moves SWORDS_DANCE, SEED_BOMB, IRON_TAIL, X_SCISSOR
-	tr_mon 74, VILEPLUME @ QUICK_CLAW
+	tr_mon 84, VILEPLUME @ QUICK_CLAW
 		tr_moves PETAL_DANCE, HEALINGLIGHT, LEECH_SEED, TOXIC
-	tr_mon 75, BELLOSSOM @ PINK_BOW
+	tr_mon 85, BELLOSSOM @ PINK_BOW
 		tr_moves SLEEP_POWDER, MOONBLAST, PETAL_DANCE, HP_ROCK
 	end_trainer
 
@@ -880,17 +880,17 @@ JanineGroup:
 	end_trainer
 
 	def_trainer 2, "Janine"
-	tr_mon 73, CROBAT @ KINGS_ROCK
+	tr_mon 83, CROBAT @ KINGS_ROCK
 		tr_moves DOUBLE_TEAM, POISON_JAB, AERIAL_ACE, TOXIC
-	tr_mon 72, ARIADOS @ QUICK_CLAW
+	tr_mon 82, ARIADOS @ QUICK_CLAW
 		tr_moves SCARY_FACE, POISON_JAB, MEAN_LOOK, GIGA_DRAIN
-	tr_mon 72, QWILFISH @ FOCUS_BAND
+	tr_mon 82, QWILFISH @ FOCUS_BAND
 		tr_moves AQUA_TAIL, POISON_JAB, SPIKES, EXPLOSION
-	tr_mon 74, NIDOQUEEN @ LEFTOVERS
+	tr_mon 84, NIDOQUEEN @ LEFTOVERS
 		tr_moves EARTHQUAKE, HEALINGLIGHT, SLUDGE_BOMB, ICE_BEAM
-	tr_mon 73, WEEZING @ CHARCOAL
+	tr_mon 83, WEEZING @ CHARCOAL
 		tr_moves SLUDGE_BOMB, FIRE_BLAST, WILL_O_WISP, EXPLOSION
-	tr_mon 75, VENOMOTH @ BRIGHTPOWDER
+	tr_mon 85, VENOMOTH @ BRIGHTPOWDER
 		tr_moves SLUDGE_BOMB, DOUBLE_TEAM, SLEEP_POWDER, PSYCHIC_M
 	end_trainer
 
@@ -921,17 +921,17 @@ SabrinaGroup:
 	end_trainer
 
 	def_trainer 2, "Sabrina"
-	tr_mon 74, ESPEON @ LEFTOVERS
+	tr_mon 84, ESPEON @ LEFTOVERS
 		tr_moves PSYCHIC_M, BATON_PASS, REFLECT, LIGHT_SCREEN
-	tr_mon 73, MR__MIME
+	tr_mon 83, MR__MIME
 		tr_moves PSYCHIC_M, DAZZLINGLEAM, NASTY_PLOT, ENCORE
-	tr_mon 73, FARIGIRAF @ BRIGHTPOWDER
+	tr_mon 83, FARIGIRAF @ BRIGHTPOWDER
 		tr_moves NASTY_PLOT, SHADOW_BALL, HYPER_VOICE, PSYCHIC_M
-	tr_mon 72, HYPNO @ TWISTEDSPOON
+	tr_mon 82, HYPNO @ TWISTEDSPOON
 		tr_moves NASTY_PLOT, PSYCHIC_M, HYPNOSIS, FUTURE_SIGHT
-	tr_mon 74, SLOWKING @ KINGS_ROCK
+	tr_mon 84, SLOWKING @ KINGS_ROCK
 		tr_moves THUNDER_WAVE, NASTY_PLOT, SCALD, PSYCHIC_M
-	tr_mon 75, ALAKAZAM @ FOCUS_BAND
+	tr_mon 85, ALAKAZAM @ FOCUS_BAND
 		tr_moves RECOVER, SHADOW_BALL, PSYCHIC_M, FOCUS_BLAST
 	end_trainer
 
@@ -962,17 +962,17 @@ BlaineGroup:
 	end_trainer
 
 	def_trainer 2, "Blaine"
-	tr_mon 71, MAGCARGO @ FOCUS_BAND
+	tr_mon 81, MAGCARGO @ FOCUS_BAND
 		tr_moves RECOVER, SHELL_SMASH, FLAME_CHARGE, ROCK_SLIDE
-	tr_mon 72, MAGMORTAR @ BLACK_BELT
+	tr_mon 82, MAGMORTAR @ BLACK_BELT
 		tr_moves SUNNY_DAY, FOCUS_BLAST, FIRE_BLAST, FLASH_CANNON
-	tr_mon 73, ARCANINE @ KINGS_ROCK
+	tr_mon 83, ARCANINE @ KINGS_ROCK
 		tr_moves CRUNCH, FLAME_CHARGE, FLARE_BLITZ, EXTREMESPEED
-	tr_mon 74, FLAREON @ CHARCOAL
+	tr_mon 84, FLAREON @ CHARCOAL
 		tr_moves WILL_O_WISP, FLARE_BLITZ, DOUBLE_EDGE, SCARY_FACE
-	tr_mon 72, TYPHLOSION @ LEFTOVERS
+	tr_mon 82, TYPHLOSION @ LEFTOVERS
 		tr_moves FIRE_BLAST, FOCUS_BLAST, EARTH_POWER, HIDDEN_POWER
-	tr_mon 75, RAPIDASH @ POISON_BARB
+	tr_mon 85, RAPIDASH @ POISON_BARB
 		tr_moves MEGAHORN, POISON_JAB, FLARE_BLITZ, WILD_CHARGE
 	end_trainer
 
@@ -1001,15 +1001,15 @@ endc
 	end_trainer
 
 	def_trainer 2, "Blue"
-	tr_mon 74, UMBREON @ BRIGHTPOWDER
+	tr_mon 84, UMBREON @ BRIGHTPOWDER
 		tr_moves CONFUSE_RAY, TOXIC, FEINT_ATTACK, PROTECT
-	tr_mon 73, MACHAMP @ BLACK_BELT
+	tr_mon 83, MACHAMP @ BLACK_BELT
 		tr_moves CROSS_CHOP, EARTHQUAKE, STONE_EDGE, THUNDERPUNCH
-	tr_mon 74, KABUTOPS @ HARD_STONE
+	tr_mon 84, KABUTOPS @ HARD_STONE
 		tr_moves SLASH, SURF, STONE_EDGE, GIGA_DRAIN
-	tr_mon 74, EXEGGUTOR @ MIRACLE_SEED
+	tr_mon 84, EXEGGUTOR @ MIRACLE_SEED
 		tr_moves PSYCHIC_M, LEECH_SEED, SEED_BOMB, GIGA_DRAIN
-	tr_mon 74, ARCANINE @ CHARCOAL
+	tr_mon 84, ARCANINE @ CHARCOAL
 		tr_moves ROAR, OUTRAGE, FLARE_BLITZ, EXTREMESPEED
 	tr_mon 75, BLASTOISE @ LEFTOVERS
 		tr_moves SURF, ICE_BEAM, REST, SLEEP_TALK
@@ -1052,22 +1052,22 @@ LeafGroup:
 
 	def_trainer_class LEAF
 	def_trainer 1, "Oxygen"
-    	tr_mon 94, "Drone", MAGNEZONE @ FOCUS_SASH, MALE
+	tr_mon 94, "Drone", MAGNEZONE @ FOCUS_SASH, MALE
 		tr_extra LEVITATE, SATK_UP_ATK_DOWN
 		tr_moves FLASH_CANNON, THUNDER_WAVE, LIGHT_SCREEN, THUNDERBOLT
-	    tr_mon 97, "Nicole",SNEASLER @ SCOPE_LENS, FEMALE
+    tr_mon 97, "Nicole",SNEASLER @ SCOPE_LENS, FEMALE
 		tr_extra POISON_TOUCH, ATK_UP_SATK_DOWN
 		tr_moves GUNK_SHOT, KNOCK_OFF, CLOSE_COMBAT, SWORDS_DANCE
-	    tr_mon 96, "Sea", KINGDRA @ LANSAT_BERRY, MALE
+    tr_mon 96, "Sea", KINGDRA @ LANSAT_BERRY, MALE
 		tr_extra SNIPER, SPE_UP_ATK_DOWN, SHINY
 		tr_moves DRAGON_PULSE, FOCUS_ENERGY, TOXIC, SURF
-	    tr_mon 90, "Free", BUTTERFREE @ SILVERPOWDER, FEMALE
+    tr_mon 90, "Free", BUTTERFREE @ SILVERPOWDER, FEMALE
 		tr_extra COMPOUND_EYES, SPE_UP_ATK_DOWN
 		tr_moves PSYCHIC_M, AIR_SLASH, BUG_BUZZ, SLEEP_POWDER
-	    tr_mon 96, "Kyubi", NINETALES @ HEAT_ROCK, FEMALE
+    tr_mon 96, "Kyubi", NINETALES @ HEAT_ROCK, FEMALE
 		tr_extra DROUGHT, SATK_UP_ATK_DOWN
 		tr_moves FLAMETHROWER, BATON_PASS, SHADOW_BALL, NASTY_PLOT
-	    tr_mon 100, "Unki", UNOWN_KING @ BERSERK_GENE, MALE
+    tr_mon 100, "Unki", UNOWN_KING @ BERSERK_GENE, MALE
 		tr_extra BATTLE_ARMOR, SDEF_UP_SATK_DOWN
 		tr_moves BULLET_PUNCH, ZEN_HEADBUTT, BELLY_DRUM, BERSERKCHOMP
 	end_trainer
@@ -1294,110 +1294,110 @@ Rival2Group:
 
 	def_trainer_class RIVAL2
 	def_trainer 1, "<RIVAL>"
-	tr_mon 61, WEAVILE @ KINGS_ROCK
+	tr_mon 64, WEAVILE @ KINGS_ROCK
 		tr_evs 252 Atk, 204 Spe
 		tr_moves SWORDS_DANCE, ICE_PUNCH, SLASH, CRUNCH
-	tr_mon 62, GOLBAT @ EVIOLITE
+	tr_mon 65, GOLBAT @ EVIOLITE
 		tr_evs 252 HP, 204 Atk
 		tr_moves POISON_JAB, SUPER_FANG, CONFUSE_RAY, AERIAL_ACE
-	tr_mon 61, MAGNEZONE @ MAGNET
+	tr_mon 64, MAGNEZONE @ MAGNET
 		tr_evs 252 SAt, 204 Spe
 		tr_moves TRI_ATTACK, ZAP_CANNON, THUNDER_WAVE, FLASH_CANNON
-	tr_mon 63, GENGAR @ SPELL_TAG
+	tr_mon 66, GENGAR @ SPELL_TAG
 		tr_evs 252 SAt, 204 Spe
 		tr_moves MEAN_LOOK, CURSE, SHADOW_BALL, CONFUSE_RAY
-	tr_mon 63, ALAKAZAM @ BRIGHTPOWDER
+	tr_mon 66, ALAKAZAM @ BRIGHTPOWDER
 		tr_evs 252 SAt, 204 Spe
 		tr_moves DISABLE, RECOVER, FUTURE_SIGHT, PSYCHIC_M
-	tr_mon 65, MEGANIUM @ MIRACLE_SEED
+	tr_mon 68, MEGANIUM @ MIRACLE_SEED
 		tr_evs 252 Atk, 204 Spe
 		tr_moves SEED_BOMB, POISONPOWDER, BODY_SLAM, LIGHT_SCREEN
 	end_trainer
 
 	def_trainer 2, "<RIVAL>"
-	tr_mon 61, WEAVILE @ KINGS_ROCK
+	tr_mon 64, WEAVILE @ KINGS_ROCK
 		tr_evs 252 Atk, 204 Spe
 		tr_moves SWORDS_DANCE, ICE_PUNCH, SLASH, CRUNCH
-	tr_mon 62, GOLBAT @ EVIOLITE
+	tr_mon 65, GOLBAT @ EVIOLITE
 		tr_evs 252 HP, 204 Atk
 		tr_moves POISON_JAB, SUPER_FANG, CONFUSE_RAY, AERIAL_ACE
-	tr_mon 61, MAGNEZONE @ MAGNET
+	tr_mon 64, MAGNEZONE @ MAGNET
 		tr_evs 252 SAt, 204 Spe
 		tr_moves TRI_ATTACK, ZAP_CANNON, THUNDER_WAVE, FLASH_CANNON
-	tr_mon 63, GENGAR @ SPELL_TAG
+	tr_mon 66, GENGAR @ SPELL_TAG
 		tr_evs 252 SAt, 204 Spe
 		tr_moves MEAN_LOOK, CURSE, SHADOW_BALL, CONFUSE_RAY
-	tr_mon 63, ALAKAZAM @ BRIGHTPOWDER
+	tr_mon 66, ALAKAZAM @ BRIGHTPOWDER
 		tr_evs 252 SAt, 204 Spe
 		tr_moves DISABLE, RECOVER, FUTURE_SIGHT, PSYCHIC_M
-	tr_mon 65, TYPHLOSION @ CHARCOAL
+	tr_mon 68, TYPHLOSION @ CHARCOAL
 		tr_evs 204 Atk, 252 SAt
 		tr_moves FLAMETHROWER, EARTH_POWER, THUNDERPUNCH, SMOKESCREEN
 	end_trainer
 
 	def_trainer 3, "<RIVAL>"
-	tr_mon 61, WEAVILE @ KINGS_ROCK
+	tr_mon 64, WEAVILE @ KINGS_ROCK
 		tr_evs 252 Atk, 204 Spe
 		tr_moves SWORDS_DANCE, ICE_PUNCH, SLASH, CRUNCH
-	tr_mon 62, GOLBAT @ EVIOLITE
+	tr_mon 65, GOLBAT @ EVIOLITE
 		tr_evs 252 HP, 204 Atk
 		tr_moves POISON_JAB, SUPER_FANG, CONFUSE_RAY, AERIAL_ACE
-	tr_mon 61, MAGNEZONE @ MAGNET
+	tr_mon 64, MAGNEZONE @ MAGNET
 		tr_evs 252 SAt, 204 Spe
 		tr_moves TRI_ATTACK, ZAP_CANNON, THUNDER_WAVE, FLASH_CANNON
-	tr_mon 63, GENGAR @ SPELL_TAG
+	tr_mon 66, GENGAR @ SPELL_TAG
 		tr_evs 252 SAt, 204 Spe
 		tr_moves MEAN_LOOK, CURSE, SHADOW_BALL, CONFUSE_RAY
-	tr_mon 63, ALAKAZAM @ BRIGHTPOWDER
+	tr_mon 66, ALAKAZAM @ BRIGHTPOWDER
 		tr_evs 252 SAt, 204 Spe
 		tr_moves DISABLE, RECOVER, FUTURE_SIGHT, PSYCHIC_M
-	tr_mon 65, FERALIGATR @ MYSTIC_WATER
+	tr_mon 68, FERALIGATR @ MYSTIC_WATER
 		tr_evs 204 Atk, 252 Spe
 		tr_moves WATERFALL, CRUNCH, SLASH, SCARY_FACE
 	end_trainer
 
 	def_trainer 4, "<RIVAL>"
-	tr_mon 68, WEAVILE @ KINGS_ROCK
+	tr_mon 71, WEAVILE @ KINGS_ROCK
 		tr_moves SWORDS_DANCE, ICE_PUNCH, SLASH, CRUNCH
-	tr_mon 69, CROBAT @ POISON_BARB
+	tr_mon 72, CROBAT @ POISON_BARB
 		tr_moves POISON_JAB, CRUNCH, CONFUSE_RAY, TOXIC
-	tr_mon 68, MAGNEZONE @ MAGNET
+	tr_mon 71, MAGNEZONE @ MAGNET
 		tr_moves THUNDERBOLT, TRI_ATTACK, THUNDER_WAVE, FLASH_CANNON
-	tr_mon 70, GENGAR @ SPELL_TAG
+	tr_mon 73, GENGAR @ SPELL_TAG
 		tr_moves THUNDERBOLT, FOCUS_BLAST, SHADOW_BALL, CONFUSE_RAY
-	tr_mon 70, ALAKAZAM @ BRIGHTPOWDER
+	tr_mon 73, ALAKAZAM @ BRIGHTPOWDER
 		tr_moves RECOVER, TRI_ATTACK, PSYCHIC_M, REFLECT
-	tr_mon 72, MEGANIUM @ LEFTOVERS
+	tr_mon 75, MEGANIUM @ LEFTOVERS
 		tr_moves PETAL_DANCE, MOONBLAST, LIGHT_SCREEN, ANCIENTPOWER
 	end_trainer
 
 	def_trainer 5, "<RIVAL>"
-	tr_mon 68, WEAVILE @ KINGS_ROCK
+	tr_mon 71, WEAVILE @ KINGS_ROCK
 		tr_moves SWORDS_DANCE, ICE_PUNCH, SLASH, CRUNCH
-	tr_mon 69, CROBAT @ POISON_BARB
+	tr_mon 72, CROBAT @ POISON_BARB
 		tr_moves POISON_JAB, CRUNCH, CONFUSE_RAY, TOXIC
-	tr_mon 68, MAGNEZONE @ MAGNET
+	tr_mon 71, MAGNEZONE @ MAGNET
 		tr_moves THUNDERBOLT, TRI_ATTACK, THUNDER_WAVE, FLASH_CANNON
-	tr_mon 70, GENGAR @ SPELL_TAG
+	tr_mon 73, GENGAR @ SPELL_TAG
 		tr_moves THUNDERBOLT, FOCUS_BLAST, SHADOW_BALL, CONFUSE_RAY
-	tr_mon 70, ALAKAZAM @ BRIGHTPOWDER
+	tr_mon 73, ALAKAZAM @ BRIGHTPOWDER
 		tr_moves RECOVER, TRI_ATTACK, PSYCHIC_M, REFLECT
-	tr_mon 72, TYPHLOSION @ LEFTOVERS
+	tr_mon 75, TYPHLOSION @ LEFTOVERS
 		tr_moves FIRE_BLAST, FOCUS_BLAST, EARTH_POWER, SMOKESCREEN
 	end_trainer
 
 	def_trainer 6, "<RIVAL>"
-	tr_mon 68, WEAVILE @ KINGS_ROCK
+	tr_mon 71, WEAVILE @ KINGS_ROCK
 		tr_moves SWORDS_DANCE, ICE_PUNCH, SLASH, CRUNCH
-	tr_mon 69, CROBAT @ POISON_BARB
+	tr_mon 72, CROBAT @ POISON_BARB
 		tr_moves POISON_JAB, CRUNCH, CONFUSE_RAY, TOXIC
-	tr_mon 68, MAGNEZONE @ MAGNET
+	tr_mon 71, MAGNEZONE @ MAGNET
 		tr_moves THUNDERBOLT, TRI_ATTACK, THUNDER_WAVE, FLASH_CANNON
-	tr_mon 70, GENGAR @ SPELL_TAG
+	tr_mon 73, GENGAR @ SPELL_TAG
 		tr_moves THUNDERBOLT, FOCUS_BLAST, SHADOW_BALL, CONFUSE_RAY
-	tr_mon 70, ALAKAZAM @ BRIGHTPOWDER
+	tr_mon 73, ALAKAZAM @ BRIGHTPOWDER
 		tr_moves RECOVER, TRI_ATTACK, PSYCHIC_M, REFLECT
-	tr_mon 72, FERALIGATR @ LEFTOVERS
+	tr_mon 75, FERALIGATR @ LEFTOVERS
 		tr_moves SURF, CRUNCH, SLASH, OUTRAGE
 	end_trainer
 
@@ -1547,30 +1547,30 @@ Lyra2Group:
 
 	def_trainer_class LYRA2
 	def_trainer 1, "Lyra"
-	tr_mon 69, PIDGEOT
-	tr_mon 70, ARCANINE
-	tr_mon 70, AZUMARILL
-	tr_mon 71, AMPHAROS
-	tr_mon 68, FARIGIRAF
-	tr_mon 72, "Chicory", MEGANIUM @ SITRUS_BERRY
+	tr_mon 72, PIDGEOT
+	tr_mon 73, ARCANINE
+	tr_mon 73, AZUMARILL
+	tr_mon 74, AMPHAROS
+	tr_mon 71, FARIGIRAF
+	tr_mon 75, "Chicory", MEGANIUM @ SITRUS_BERRY
 	end_trainer
 
 	def_trainer 2, "Lyra"
-	tr_mon 69, PIDGEOT
-	tr_mon 70, SUNFLORA
-	tr_mon 70, AZUMARILL
-	tr_mon 71, AMPHAROS
-	tr_mon 68, FARIGIRAF
-	tr_mon 72, "Cinder", TYPHLOSION @ SITRUS_BERRY
+	tr_mon 72, PIDGEOT
+	tr_mon 73, SUNFLORA
+	tr_mon 73, AZUMARILL
+	tr_mon 74, AMPHAROS
+	tr_mon 71, FARIGIRAF
+	tr_mon 75, "Cinder", TYPHLOSION @ SITRUS_BERRY
 	end_trainer
 
 	def_trainer 3, "Lyra"
-	tr_mon 69, PIDGEOT
-	tr_mon 70, SUNFLORA
-	tr_mon 70, ARCANINE
-	tr_mon 71, AMPHAROS
-	tr_mon 68, FARIGIRAF
-	tr_mon 72, "Toto", FERALIGATR @ SITRUS_BERRY
+	tr_mon 72, PIDGEOT
+	tr_mon 73, SUNFLORA
+	tr_mon 73, ARCANINE
+	tr_mon 74, AMPHAROS
+	tr_mon 71, FARIGIRAF
+	tr_mon 75, "Toto", FERALIGATR @ SITRUS_BERRY
 	end_trainer
 
 
@@ -1844,7 +1844,7 @@ CamperGroup:
 	end_trainer
 
 	def_trainer BARRY, "Barry"
-	tr_mon 60, NIDOKING
+	tr_mon 63, NIDOKING
 	end_trainer
 
 	def_trainer LLOYD, "Lloyd"
@@ -1874,7 +1874,7 @@ CamperGroup:
 	end_trainer
 
 	def_trainer JERRY, "Jerry"
-	tr_mon 62, RHYDON
+	tr_mon 65, RHYDON
 	end_trainer
 
 	def_trainer SPENCER, "Spencer"
@@ -2039,7 +2039,7 @@ endc
 	end_trainer
 
 	def_trainer CINDY, "Cindy"
-	tr_mon 61, NIDOQUEEN
+	tr_mon 64, NIDOQUEEN
 	end_trainer
 
 	def_trainer HOPE, "Hope"
@@ -2066,7 +2066,7 @@ endc
 	end_trainer
 
 	def_trainer TANYA, "Tanya"
-	tr_mon 61, EXEGGUTOR
+	tr_mon 64, EXEGGUTOR
 	end_trainer
 
 	def_trainer LILY, "Lily"
@@ -2126,13 +2126,13 @@ TwinsGroup:
 	end_trainer
 
 	def_trainer JOANDZOE1, "Lo & Zoe"
-	tr_mon 59, VICTREEBEL
-	tr_mon 59, VILEPLUME
+	tr_mon 62, VICTREEBEL
+	tr_mon 62, VILEPLUME
 	end_trainer
 
 	def_trainer JOANDZOE2, "Lo & Zoe"
-	tr_mon 59, VILEPLUME
-	tr_mon 59, VICTREEBEL
+	tr_mon 62, VILEPLUME
+	tr_mon 62, VICTREEBEL
 	end_trainer
 
 	def_trainer MEGANDPEG1, "Meg & Peg"
@@ -2707,7 +2707,7 @@ HikerGroup:
 	end_trainer
 
 	def_trainer EDWIN, "Edwin"
-	tr_mon 62, GOLEM
+	tr_mon 65, "Mimic", GOLEM
 	end_trainer
 
 	def_trainer DEVIN, "Devin"
@@ -3344,15 +3344,15 @@ SuperNerdGroup:
 	end_trainer
 
 	def_trainer CARY, "Cary"
-	tr_mon 63, FLAREON
+	tr_mon 66, FLAREON
 	end_trainer
 
 	def_trainer WALDO, "Waldo"
-	tr_mon 65, CHARIZARD
+	tr_mon 68, CHARIZARD
 	end_trainer
 
 	def_trainer MERLE, "Merle"
-	tr_mon 63, MAGCARGO
+	tr_mon 66, MAGCARGO
 	end_trainer
 
 	def_trainer LUIS, "Luis"
@@ -3450,9 +3450,9 @@ endc
 	end_trainer
 
 	def_trainer AMANDA, "Amanda"
-	tr_mon 57, GLOOM
-	tr_mon 60, ARBOK
-	tr_mon 57, GLOOM
+	tr_mon 60, GLOOM
+	tr_mon 63, ARBOK
+	tr_mon 60, GLOOM
 	end_trainer
 
 	def_trainer KRISE, "Krise"
@@ -3466,9 +3466,9 @@ endc
 	end_trainer
 
 	def_trainer LINDA, "Linda"
-	tr_mon 57, BULBASAUR
-	tr_mon 59, IVYSAUR
-	tr_mon 61, VENUSAUR
+	tr_mon 60, BULBASAUR
+	tr_mon 62, IVYSAUR
+	tr_mon 64, VENUSAUR
 	end_trainer
 
 	def_trainer LAURA, "Laura"
@@ -3484,9 +3484,9 @@ endc
 	end_trainer
 
 	def_trainer MICHELLE, "Michelle"
-	tr_mon 56, LEAFEON
-	tr_mon 57, TANGELA
-	tr_mon 58, JUMPLUFF
+	tr_mon 59, LEAFEON
+	tr_mon 60, TANGELA
+	tr_mon 61, JUMPLUFF
 	end_trainer
 
 	def_trainer ELLEN, "Ellen"
@@ -3592,9 +3592,9 @@ BeautyGroup:
 	end_trainer
 
 	def_trainer JULIA, "Julia"
-	tr_mon 56, PARAS
-	tr_mon 56, EXEGGCUTE
-	tr_mon 59, PARASECT
+	tr_mon 59, PARAS
+	tr_mon 59, EXEGGCUTE
+	tr_mon 62, PARASECT
 	end_trainer
 
 	def_trainer VALENCIA, "Valencia"
@@ -3869,9 +3869,9 @@ JugglerGroup:
 	end_trainer
 
 	def_trainer HORTON, "Horton"
-	tr_mon 53, ELECTRODE
-	tr_mon 53, ELECTRODE
-	tr_mon 53, ELECTRODE
+	tr_mon 57, ELECTRODE
+	tr_mon 57, ELECTRODE
+	tr_mon 57, ELECTRODE
 	end_trainer
 
 
@@ -4086,8 +4086,8 @@ PsychicGroup:
 	end_trainer
 
 	def_trainer FRANKLIN, "Franklin"
-	tr_mon 53, KADABRA
-	tr_mon 56, GIRAFARIG
+	tr_mon 56, KADABRA
+	tr_mon 59, GIRAFARIG
 	end_trainer
 
 	def_trainer HERMAN, "Herman"
@@ -4137,9 +4137,9 @@ PsychicGroup:
 	end_trainer
 
 	def_trainer JARED, "Jared"
-	tr_mon 53, MR__MIME
-	tr_mon 55, EXEGGCUTE
-	tr_mon 55, EXEGGCUTE
+	tr_mon 56, MR__MIME
+	tr_mon 58, EXEGGCUTE
+	tr_mon 58, EXEGGCUTE
 	end_trainer
 
 	def_trainer RODNEY, "Rodney"
@@ -4148,9 +4148,9 @@ PsychicGroup:
 	end_trainer
 
 	def_trainer LEON, "Leon"
-	tr_mon 54, NOCTOWL
-	tr_mon 55, HYPNO
-	tr_mon 53, GIRAFARIG
+	tr_mon 57, NOCTOWL
+	tr_mon 58, HYPNO
+	tr_mon 56, GIRAFARIG
 	end_trainer
 
 	def_trainer URI, "Uri"
@@ -4186,16 +4186,16 @@ HexManiacGroup:
 	end_trainer
 
 	def_trainer LUNA, "Luna"
-	tr_mon 54, KADABRA
+	tr_mon 57, KADABRA
 		tr_moves PSYCHIC_M, SHADOW_BALL, CONFUSE_RAY, FUTURE_SIGHT
-	tr_mon 56, NINETALES
+	tr_mon 59, NINETALES
 		tr_moves PSYCHIC_M, SHADOW_BALL, CONFUSE_RAY, FLAMETHROWER
 	end_trainer
 
 	def_trainer NATALIE, "Natalie"
-	tr_mon 54, DROWZEE
-	tr_mon 54, DROWZEE
-	tr_mon 56, HYPNO
+	tr_mon 57, DROWZEE
+	tr_mon 57, DROWZEE
+	tr_mon 59, HYPNO
 	end_trainer
 
 	def_trainer VIVIAN, "Vivian"
@@ -4294,13 +4294,13 @@ MediumGroup:
 	end_trainer
 
 	def_trainer REBECCA, "Rebecca"
-	tr_mon 54, DROWZEE
-	tr_mon 54, HYPNO
+	tr_mon 57, DROWZEE
+	tr_mon 57, HYPNO
 	end_trainer
 
 	def_trainer DORIS, "Doris"
-	tr_mon 53, SLOWPOKE
-	tr_mon 55, SLOWBRO
+	tr_mon 56, SLOWPOKE
+	tr_mon 58, SLOWBRO
 	end_trainer
 
 
@@ -4533,9 +4533,9 @@ GentlemanGroup:
 	end_trainer
 
 	def_trainer GREGORY, "Gregory"
-	tr_mon 56, PIKACHU
-	tr_mon 53, FLAAFFY
-	tr_mon 53, CHINCHOU
+	tr_mon 60, PIKACHU
+	tr_mon 57, FLAAFFY
+	tr_mon 57, CHINCHOU
 	end_trainer
 
 	def_trainer ALFRED, "Alfred"
@@ -4791,12 +4791,12 @@ SailorGroup:
 	end_trainer
 
 	def_trainer PARKER, "Parker"
-	tr_mon 56, HORSEA
-	tr_mon 57, SEADRA
+	tr_mon 59, HORSEA
+	tr_mon 60, SEADRA
 	end_trainer
 
 	def_trainer EDDIE, "Eddie"
-	tr_mon 59, AZUMARILL
+	tr_mon 62, AZUMARILL
 	end_trainer
 
 	def_trainer HARVEY, "Harvey"
@@ -5048,16 +5048,16 @@ SwimmerFGroup:
 	end_trainer
 
 	def_trainer DIANA, "Diana"
-	tr_mon 58, GOLDUCK
+	tr_mon 61, GOLDUCK
 	end_trainer
 
 	def_trainer BRIANA, "Briana"
-	tr_mon 56, SEAKING
-	tr_mon 56, LAPRAS
+	tr_mon 59, SEAKING
+	tr_mon 59, LAPRAS
 	end_trainer
 
 	def_trainer VIOLA, "Viola"
-	tr_mon 58, CLOYSTER
+	tr_mon 61, CLOYSTER
 	end_trainer
 
 	def_trainer KATIE, "Lisa" ; MISMATCH
@@ -5194,15 +5194,15 @@ ScientistGroup:
 
 	def_trainer_class SCIENTIST
 	def_trainer LOWELL, "Lowell"
-	tr_mon 60, ARCANINE
+	tr_mon 63, ARCANINE
 	end_trainer
 
 	def_trainer DENNETT, "Dennett"
-	tr_mon 60, NINETALES
+	tr_mon 63, NINETALES
 	end_trainer
 
 	def_trainer LINDEN, "Linden"
-	tr_mon 60, MAGMAR
+	tr_mon 63, MAGMAR
 	end_trainer
 
 	def_trainer OSKAR, "Oskar"
@@ -5684,9 +5684,9 @@ GuitaristMGroup:
 	end_trainer
 
 	def_trainer VINCENT, "Vincent"
-	tr_mon 53, VOLTORB
-	tr_mon 52, MAGNEMITE
-	tr_mon 55, JOLTEON
+	tr_mon 57, VOLTORB
+	tr_mon 56, MAGNEMITE
+	tr_mon 59, JOLTEON
 	end_trainer
 
 	def_trainer ROGER, "Roger"
@@ -5714,11 +5714,11 @@ GuitaristFGroup:
 
 	def_trainer_class GUITARISTF
 	def_trainer JANET, "Janet"
-	tr_mon 56, PIKACHU, FEMALE | PIKACHU_SURF_FORM
+	tr_mon 60, PIKACHU, FEMALE | PIKACHU_SURF_FORM
 		tr_moves IRON_TAIL, EXTREMESPEED, SURF, THUNDERBOLT
-	tr_mon 54, ELECTABUZZ, FEMALE
+	tr_mon 58, ELECTABUZZ, FEMALE
 		tr_moves LIGHT_SCREEN, THUNDERPUNCH, CROSS_CHOP, SCREECH
-	tr_mon 55, RAICHU, FEMALE | ALOLAN_FORM
+	tr_mon 59, RAICHU, FEMALE | ALOLAN_FORM
 		tr_moves EXTREMESPEED, SURF, THUNDERBOLT, AGILITY
 	end_trainer
 
@@ -5904,8 +5904,8 @@ AromaLadyGroup:
 
 	def_trainer_class AROMA_LADY
 	def_trainer DAHLIA, "Dahlia"
-	tr_mon 58, VILEPLUME
-	tr_mon 58, BELLOSSOM
+	tr_mon 61, VILEPLUME
+	tr_mon 61, BELLOSSOM
 	end_trainer
 
 	def_trainer BRYONY, "Bryony"
@@ -6380,13 +6380,13 @@ endc
 	end_trainer
 
 	def_trainer SALMA, "Salma"
-	tr_mon 62, SLOWKING
-	tr_mon 65, KANGASKHAN
+	tr_mon 65, SLOWKING
+	tr_mon 68, KANGASKHAN
 	end_trainer
 
 	def_trainer BONITA, "Bonita"
-	tr_mon 62, GIRAFARIG
-	tr_mon 65, SUDOWOODO
+	tr_mon 65, GIRAFARIG
+	tr_mon 68, SUDOWOODO
 	end_trainer
 
 	def_trainer SERA, "Sera"
@@ -6431,23 +6431,23 @@ AceDuoGroup:
 
 	def_trainer_class ACE_DUO
 	def_trainer ELANANDIDA1, "Elan & Ida"
-	tr_mon 65, PORYGON2, MALE
-	tr_mon 65, AZUMARILL, FEMALE
+	tr_mon 68, PORYGON2, MALE
+	tr_mon 68, AZUMARILL, FEMALE
 	end_trainer
 
 	def_trainer ELANANDIDA2, "Elan & Ida"
-	tr_mon 65, AZUMARILL, FEMALE
-	tr_mon 65, PORYGON2, MALE
+	tr_mon 68, AZUMARILL, FEMALE
+	tr_mon 68, PORYGON2, MALE
 	end_trainer
 
 	def_trainer ARAANDBELA1, "Ara & Bela"
-	tr_mon 64, TAUROS, MALE
-	tr_mon 64, GIRAFARIG, FEMALE
+	tr_mon 67, TAUROS, MALE
+	tr_mon 67, GIRAFARIG, FEMALE
 	end_trainer
 
 	def_trainer ARAANDBELA2, "Ara & Bela"
-	tr_mon 64, GIRAFARIG, FEMALE
-	tr_mon 64, TAUROS, MALE
+	tr_mon 67, GIRAFARIG, FEMALE
+	tr_mon 67, TAUROS, MALE
 	end_trainer
 
 	def_trainer THOMANDKAE1, "Thom & Kae"
