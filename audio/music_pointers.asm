@@ -196,8 +196,10 @@ Music:
 	dba Music_PaletteBattlePrism
 	dba Music_Megalovania
 	dba Music_Waterfall
+	dba Music_Undertale
 	dba Music_Carpet
 	dba Music_FaintCourage
+	dba Music_BlackKnife
 	dba Music_ZeroTwo
 	dba Music_IronWhale
 	dba Music_Monochrome

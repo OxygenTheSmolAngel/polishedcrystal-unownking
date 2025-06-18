@@ -47,6 +47,7 @@ DEF NUM_MP_EDIT_FIELDS EQU const_value
 	const ORIGIN_KIRBY64   ; 15
 	const ORIGIN_SKNIGHT   ; 16
 	const ORIGIN_LULLABY   ; 17
+	const ORIGIN_YOUTUBE   ; 18
 DEF NUM_SONG_ORIGINS EQU const_value
 
 ; SongArtists indexes (see data/music_player/song_artists.asm)
@@ -84,4 +85,5 @@ DEF NUM_SONG_ORIGINS EQU const_value
 	const COMPOSER_JUN_ISHIKAWA                  ; 1e
 	const COMPOSER_MANAMI_MATSUMAE               ; 1f
 	const COMPOSER_ADAM_MCHUMMUS                 ; 20
+	const COMPOSER_LADY_GAGA_LHUGUENY            ; 21
 DEF NUM_SONG_ARTISTS EQU const_value

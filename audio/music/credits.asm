@@ -908,16 +908,15 @@ Music_Credits_Ch1:
 	note D_, 2
 	rest 14
 	note D_, 16
-	note D_, 16
+	rest 16
 	sound_ret
 
 Music_Credits_Ch2:
 	duty_cycle 1
 	vibrato 20, 2, 3
-	note_type 12, 2, -7
+	note_type 12, 12, -7
 	stereo_panning TRUE, FALSE
 	octave 4
-	volume_envelope 12, -7
 	note G_, 16
 	note G_, 16
 	octave 5
@@ -1533,14 +1532,27 @@ Music_Credits_Ch2:
 	note D_, 2
 	rest 14
 	octave 1
+	volume_envelope 12, 7
 	note D_, 16
-	note D_, 16
+	rest 16
 	sound_ret
 
 Music_Credits_Ch3:
 	vibrato 22, 2, 3
 	note_type 12, 3, 4
 	stereo_panning TRUE, TRUE
+	octave 6
+	note G_, 2
+	note D_, 2
+	note C_, 2
+	octave 5
+	note G_, 2
+	octave 6
+	note G_, 2
+	note D_, 2
+	note C_, 2
+	octave 5
+	note G_, 2
 	octave 6
 	volume_envelope 2, 4
 	note G_, 2
@@ -1555,18 +1567,7 @@ Music_Credits_Ch3:
 	octave 5
 	note G_, 2
 	octave 6
-	note G_, 2
-	note D_, 2
-	note C_, 2
-	octave 5
-	note G_, 2
-	octave 6
-	note G_, 2
-	note D_, 2
-	note C_, 2
-	octave 5
-	note G_, 2
-	octave 6
+	volume_envelope 1, 4
 	note G_, 2
 	note D_, 2
 	octave 5

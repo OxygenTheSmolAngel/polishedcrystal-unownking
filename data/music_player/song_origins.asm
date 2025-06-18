@@ -24,4 +24,5 @@ SongOrigins:
 	li "Kirby 64"
 	li "ShovelKnight"
 	li "Hypno'sLullaby"
+	li "Youtube"
 	assert_list_length NUM_SONG_ORIGINS

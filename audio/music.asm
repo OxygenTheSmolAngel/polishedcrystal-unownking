@@ -568,8 +568,14 @@ INCLUDE "audio/music/undertale/megalovania.asm"
 SECTION "Song - undertale/waterfall", ROMX
 INCLUDE "audio/music/undertale/waterfall.asm"
 
+SECTION "Song - undertale/undertale", ROMX
+INCLUDE "audio/music/undertale/undertale.asm"
+
 SECTION "Song - deltarune/faintcourage", ROMX
 INCLUDE "audio/music/deltarune/faintcourage.asm"
+
+SECTION "Song - deltarune/blackknife", ROMX
+INCLUDE "audio/music/deltarune/blackknife.asm"
 
 SECTION "Song - bluesky/carpet", ROMX
 INCLUDE "audio/music/bluesky/carpet.asm"
