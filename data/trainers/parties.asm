@@ -511,9 +511,9 @@ WillGroup:
 	tr_mon 50, ALAKAZAM @ LUM_BERRY
 		tr_evs 144 HP, 144 SAt
 		tr_moves CALM_MIND, RECOVER, LIGHT_SCREEN, PSYCHIC_M
-	tr_mon 49, SLOWBRO @ SITRUS_BERRY
+	tr_mon 49, SLOWKING @ CHESTO_BERRY
 		tr_evs 144 HP, 144 SDf
-		tr_moves SURF, CALM_MIND, BODY_SLAM, PSYCHIC_M
+		tr_moves SURF, NASTY_PLOT, REST, PSYCHIC_M
 	tr_mon 51, XATU @ LEFTOVERS
 		tr_evs 4 HP, 252 SAt
 		tr_moves QUICK_ATTACK, CONFUSE_RAY, PSYCHIC_M, FUTURE_SIGHT
@@ -528,8 +528,8 @@ WillGroup:
 		tr_moves REFLECT, GIGA_DRAIN, SLEEP_POWDER, PSYCHIC_M
 	tr_mon 71, ALAKAZAM @ LUM_BERRY
 		tr_moves HP_FIGHTING, RECOVER, SHADOW_BALL, PSYCHIC_M
-	tr_mon 71, SLOWBRO @ WISE_GLASSES
-		tr_moves SURF, PSYCHIC_M, THUNDER_WAVE, REST
+	tr_mon 71, SLOWKING @ CHESTO_BERRY
+		tr_moves SURF, PSYCHIC_M, SWAGGER, REST
 	tr_mon 72, XATU @ LEFTOVERS
 		tr_moves QUICK_ATTACK, FUTURE_SIGHT, CONFUSE_RAY, PSYCHIC_M
 	end_trainer
@@ -581,9 +581,9 @@ BrunoGroup:
 
 	def_trainer_class BRUNO
 	def_trainer 1, "Bruno"
-	tr_mon 51, HITMONTOP @ QUICK_CLAW
-		tr_evs 176 Atk, 176 Spe
-		tr_moves PURSUIT, CLOSE_COMBAT, DIG, PROTECT
+	tr_mon 51, MAGMORTAR @ LIFE_ORB
+		tr_evs 176 SAt, 176 Spe
+		tr_moves FLAMETHROWER, SUNNY_DAY, SOLAR_BEAM, FOCUS_BLAST
 	tr_mon 53, SNEASLER @ SILVERPOWDER
 		tr_evs 176 Atk, 176 Spe
 		tr_moves SWORDS_DANCE, X_SCISSOR, CLOSE_COMBAT, GUNK_SHOT
@@ -593,7 +593,7 @@ BrunoGroup:
 	tr_mon 51, HITMONCHAN @ NEVERMELTICE
 		tr_evs 176 Atk, 176 Spe
 		tr_moves THUNDERPUNCH, ICE_PUNCH, POISON_JAB, MACH_PUNCH
-	tr_mon 53, ONIX @ HARD_STONE
+	tr_mon 53, STEELIX @ HARD_STONE
 		tr_evs 100 HP, 252 Atk
 		tr_moves BODY_SLAM, EARTHQUAKE, CRUNCH, ROCK_SLIDE
 	tr_mon 55, MACHAMP @ LEFTOVERS
@@ -602,8 +602,8 @@ BrunoGroup:
 	end_trainer
 
 	def_trainer 2, "Bruno"
-	tr_mon 71, HITMONTOP @ QUICK_CLAW
-		tr_moves BULK_UP, SUCKER_PUNCH, COUNTER, HI_JUMP_KICK
+	tr_mon 71, MAGMORTAR @ HEAT_ROCK
+		tr_moves FIRE_BLAST, SUNNY_DAY, SOLAR_BEAM, FOCUS_BLAST
 	tr_mon 72, SNEASLER @ SILVERPOWDER
 		tr_moves SWORDS_DANCE, X_SCISSOR, CLOSE_COMBAT, GUNK_SHOT
 	tr_mon 71, HITMONLEE @ FOCUS_BAND
@@ -631,9 +631,9 @@ KarenGroup:
 	tr_mon 54, WEAVILE @ KINGS_ROCK, FEMALE
 		tr_evs 252 Atk, 132 Spe
 		tr_moves SWORDS_DANCE, SCREECH, NIGHT_SLASH, ICE_PUNCH
-	tr_mon 55, GENGAR @ SPELL_TAG, FEMALE
+	tr_mon 55, GIRAFARIG @ EVIOLITE, FEMALE
 		tr_evs 252 SAt, 132 Spe
-		tr_moves SHADOW_BALL, WILL_O_WISP, CURSE, DESTINY_BOND
+		tr_moves NASTY_PLOT, BATON_PASS, PSYCHIC_M, DARK_PULSE
 	tr_mon 55, HONCHKROW @ BLACKGLASSES, FEMALE
 		tr_evs 132 Atk, 252 Spe
 		tr_moves DRILL_PECK, SUCKER_PUNCH, PURSUIT, BRAVE_BIRD
@@ -647,8 +647,8 @@ KarenGroup:
 		tr_moves CHARM, HEALINGLIGHT, PURSUIT, TOXIC
 	tr_mon 73, WEAVILE @ KINGS_ROCK
 		tr_moves SWORDS_DANCE, SCREECH, SLASH, ICE_PUNCH
-	tr_mon 75, GENGAR @ MAGNET
-		tr_moves HYPNOSIS, THUNDER, SHADOW_BALL, DESTINY_BOND
+	tr_mon 75, FARIGIRAF @ ASSAULT_VEST
+		tr_moves DOUBLE_KICK, DARK_PULSE, SHADOW_BALL, ZEN_HEADBUTT
 	tr_mon 74, HONCHKROW @ BLACKGLASSES
 		tr_moves DRILL_PECK, SUCKER_PUNCH, NIGHT_SLASH, BRAVE_BIRD
 	tr_mon 75, TYRANITAR @ SOFT_SAND
@@ -667,10 +667,10 @@ ChampionGroup:
 		tr_extra INTIMIDATE, SPE_UP_SATK_DOWN
 		tr_evs 164 Atk, 252 Spe
 		tr_moves DRAGON_DANCE, FLY, WATERFALL, EARTHQUAKE
-	tr_mon 58, DRAGONITE @ WIDE_LENS, MALE
-		tr_extra INNER_FOCUS, SATK_UP_ATK_DOWN
+	tr_mon 58, EXEGGUTOR @ LUM_BERRY, MALE | ALOLAN_FORM
+		tr_extra HARVEST, SATK_UP_ATK_DOWN
 		tr_evs 164 SAt, 252 Spe
-		tr_moves FIRE_BLAST, BLIZZARD, THUNDER, HYPER_BEAM
+		tr_moves GIGA_DRAIN, DRAGON_PULSE, FLAMETHROWER, SLUDGE_BOMB
 	tr_mon 58, KINGDRA @ SCOPE_LENS, MALE
 		tr_extra SNIPER, SATK_UP_ATK_DOWN
 		tr_evs 164 SAt, 252 Spe
@@ -1652,10 +1652,10 @@ YoungsterGroup:
 	end_trainer
 
 	def_trainer JOEY5, "Joey"
-	tr_mon 40, RATICATE @ SITRUS_BERRY, MALE
+	tr_mon 100, RATICATE @ SITRUS_BERRY, MALE
 		tr_extra GUTS, ATK_UP_SATK_DOWN
 		tr_dvs 15 All
-		tr_evs 160 Atk, 160 Spe
+		tr_evs 252 Atk, 252 Spe
 		tr_moves HYPER_BEAM, QUICK_ATTACK, HYPER_FANG, PURSUIT
 	end_trainer
 
@@ -1907,7 +1907,8 @@ CamperGroup:
 	end_trainer
 
 	def_trainer TED, "Ted"
-	tr_mon 18, MANKEY
+	tr_mon 5, MANKEY
+	tr_mon 7, ZUBAT
 	end_trainer
 
 	def_trainer JOHN, "John"
@@ -2040,13 +2041,15 @@ endc
 	end_trainer
 
 	def_trainer ERIN1, "Erin"
-	tr_mon 18, PONYTA
-	tr_mon 16, ODDISH
+	tr_mon 7, PONYTA
+	tr_mon 5, ODDISH
+	tr_mon 5, PICHU
 	end_trainer
 
 	def_trainer ERIN2, "Erin"
 	tr_mon 32, PONYTA
 	tr_mon 32, GLOOM
+	tr_mon 33, PIKACHU
 	end_trainer
 
 	def_trainer ERIN3, "Erin"
@@ -2713,10 +2716,10 @@ HikerGroup:
 	end_trainer
 
 	def_trainer BAILEY, "Bailey"
-	tr_mon 15, GEODUDE
-	tr_mon 15, GEODUDE
-	tr_mon 15, GEODUDE
-	tr_mon 17, LARVITAR
+	tr_mon 5, GEODUDE
+	tr_mon 5, GEODUDE
+	tr_mon 5, GEODUDE
+	tr_mon 7, LARVITAR
 	end_trainer
 
 	def_trainer TIM, "Eoin" ; MISMATCH
@@ -7391,17 +7394,17 @@ DarachGroup:
 
 	def_trainer_class DARACH
 	def_trainer 1, "Darach"
-	tr_mon 58, NIDOQUEEN
-	tr_mon 56, HERACROSS
+	tr_mon LEVEL_FROM_BADGES + 22, NIDOQUEEN
+	tr_mon LEVEL_FROM_BADGES + 20, HERACROSS
 if DEF(FAITHFUL)
-	tr_mon 57, MACHAMP
-	tr_mon 56, SKARMORY
+	tr_mon LEVEL_FROM_BADGES + 21, MACHAMP
+	tr_mon LEVEL_FROM_BADGES + 20, SKARMORY
 else
-	tr_mon 57, BLASTOISE
-	tr_mon 56, FARFETCH_D
+	tr_mon LEVEL_FROM_BADGES + 21, BLASTOISE
+	tr_mon LEVEL_FROM_BADGES + 20, FARFETCH_D
 endc
-	tr_mon 58, MISMAGIUS
-	tr_mon 60, HOUNDOOM
+	tr_mon LEVEL_FROM_BADGES + 22, MISMAGIUS
+	tr_mon LEVEL_FROM_BADGES + 24, HOUNDOOM
 	end_trainer
 
 
@@ -7410,12 +7413,12 @@ CaitlinGroup:
 
 	def_trainer_class CAITLIN
 	def_trainer 1, "Caitlin"
-	tr_mon 58, ESPEON
-	tr_mon 56, XATU
-	tr_mon 57, STARMIE
-	tr_mon 56, JYNX
-	tr_mon 58, ALAKAZAM
-	tr_mon 60, HYPNO
+	tr_mon LEVEL_FROM_BADGES + 22, ESPEON
+	tr_mon LEVEL_FROM_BADGES + 20, XATU
+	tr_mon LEVEL_FROM_BADGES + 21, STARMIE
+	tr_mon LEVEL_FROM_BADGES + 20, JYNX
+	tr_mon LEVEL_FROM_BADGES + 22, ALAKAZAM
+	tr_mon LEVEL_FROM_BADGES + 24, HYPNO
 	end_trainer
 
 
@@ -7424,12 +7427,12 @@ CandelaGroup:
 
 	def_trainer_class CANDELA
 	def_trainer 1, "Candela"
-	tr_mon 63, FLAREON
-	tr_mon 62, MAGMAR
-	tr_mon 63, CHARIZARD
-	tr_mon 61, DRAGONITE
-	tr_mon 62, ARCANINE
-	tr_mon 65, MOLTRES @ CHARCOAL
+	tr_mon LEVEL_FROM_BADGES + 27, FLAREON
+	tr_mon LEVEL_FROM_BADGES + 26, MAGMAR
+	tr_mon LEVEL_FROM_BADGES + 27, CHARIZARD
+	tr_mon LEVEL_FROM_BADGES + 25, DRAGONITE
+	tr_mon LEVEL_FROM_BADGES + 26, ARCANINE
+	tr_mon LEVEL_FROM_BADGES + 29, MOLTRES @ CHARCOAL
 	end_trainer
 
 
@@ -7438,12 +7441,12 @@ BlancheGroup:
 
 	def_trainer_class BLANCHE
 	def_trainer 1, "Blanche"
-	tr_mon 63, VAPOREON
-	tr_mon 62, LAPRAS
-	tr_mon 63, BLASTOISE
-	tr_mon 61, JYNX
-	tr_mon 62, STARMIE
-	tr_mon 65, ARTICUNO @ NEVERMELTICE
+	tr_mon LEVEL_FROM_BADGES + 27, VAPOREON
+	tr_mon LEVEL_FROM_BADGES + 26, LAPRAS
+	tr_mon LEVEL_FROM_BADGES + 27, BLASTOISE
+	tr_mon LEVEL_FROM_BADGES + 25, JYNX
+	tr_mon LEVEL_FROM_BADGES + 26, STARMIE
+	tr_mon LEVEL_FROM_BADGES + 29, ARTICUNO @ NEVERMELTICE
 	end_trainer
 
 
@@ -7452,12 +7455,12 @@ SparkGroup:
 
 	def_trainer_class SPARK_T
 	def_trainer 1, "Spark"
-	tr_mon 63, JOLTEON, MALE
-	tr_mon 62, ELECTABUZZ, MALE
-	tr_mon 63, VENUSAUR, MALE
-	tr_mon 61, SNORLAX, MALE
-	tr_mon 64, PIKACHU @ LIGHT_BALL, MALE | PIKACHU_SPARK_FORM
-	tr_mon 65, ZAPDOS @ MAGNET, MALE
+	tr_mon LEVEL_FROM_BADGES + 27, JOLTEON, MALE
+	tr_mon LEVEL_FROM_BADGES + 26, ELECTABUZZ, MALE
+	tr_mon LEVEL_FROM_BADGES + 27, VENUSAUR, MALE
+	tr_mon LEVEL_FROM_BADGES + 25, SNORLAX, MALE
+	tr_mon LEVEL_FROM_BADGES + 28, PIKACHU @ LIGHT_BALL, MALE | PIKACHU_SPARK_FORM
+	tr_mon LEVEL_FROM_BADGES + 29, ZAPDOS @ MAGNET, MALE
 	end_trainer
 
 
@@ -7671,6 +7674,7 @@ PiersGroup:
 	tr_mon 17, QWILFISH, HISUIAN_FORM
 	tr_mon 17, MUK, ALOLAN_FORM
 	tr_mon 19, RATICATE, ALOLAN_FORM
+	tr_mon 16, MEOWTH, ALOLAN_FORM
 	end_trainer
 
 	def_trainer 2, "Piers"
