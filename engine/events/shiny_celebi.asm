@@ -1,6 +1,9 @@
 SpecialGiveShinyCelebi:
 ; Adding to the party.
 ; Level 100 Celebi.
+	ld hl, wTempMonNickname
+	ld de, .Nickname
+	call CopyName2
 	ld de, wTempMonOT
 	ld hl, .OTAndExtra
 	ld bc, PLAYER_NAME_LENGTH + 3
@@ -88,3 +91,6 @@ endr
 .OTAndExtra:
 	rawchar "Gold@@@"
 	db 0, 0, 0
+
+.Nickname:
+	rawchar "Celebi@"

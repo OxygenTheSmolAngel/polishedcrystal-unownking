@@ -304,6 +304,33 @@ endc
 		tr_moves WATERFALL, BULK_UP, ICE_PUNCH, CROSS_CHOP
 	end_trainer
 
+	def_trainer 3, "Chuck"
+	tr_mon 34, PRIMEAPE @ MUSCLE_BAND, MALE
+		tr_extra DEFIANT
+		tr_evs 160 Atk
+		tr_moves KARATE_CHOP, SEISMIC_TOSS, SCREECH, DYNAMICPUNCH
+	tr_mon 32, TYROGUE @ MUSCLE_BAND, MALE
+		tr_extra GUTS
+		tr_evs 160 Atk
+		tr_moves STRENGTH, BODY_SLAM, SWAGGER, PROTECT
+	tr_mon 33, SIRFETCH_D, MALE
+		tr_extra STEADFAST
+		tr_evs 160 Atk
+if DEF(FAITHFUL)
+		tr_moves ROCK_SMASH, BODY_SLAM, FEINT_ATTACK, SWORDS_DANCE
+else
+		tr_moves REVERSAL, BODY_SLAM, FEINT_ATTACK, SWORDS_DANCE
+endc
+	tr_mon 33, HITMONTOP, MALE
+		tr_extra INTIMIDATE
+		tr_evs 160 Atk
+		tr_moves BULK_UP, SUCKER_PUNCH, DOUBLE_KICK, RAPID_SPIN
+	tr_mon 37, POLIWRATH @ ZOOM_LENS, MALE
+		tr_extra WATER_ABSORB
+		tr_evs 160 Atk
+		tr_moves ICE_PUNCH, HYPNOSIS, WATERFALL, DYNAMICPUNCH
+	end_trainer
+
 
 SECTION "JasmineGroup", ROMX
 JasmineGroup:
@@ -352,6 +379,23 @@ endc
 		tr_moves EARTHQUAKE, ROCK_SLIDE, CRUNCH, IRON_HEAD
 	end_trainer
 
+	def_trainer 3, "Jasmine"
+	tr_mon 30, SKARMORY, MALE
+		tr_evs 192 Spe
+		tr_moves MUD_SLAP, DRILL_PECK, SPIKES, STEEL_WING
+	tr_mon 29, MAGNETON, MALE
+		tr_evs 192 SAt
+		tr_moves SUPERSONIC, THUNDER_WAVE, THUNDERBOLT, TRI_ATTACK
+	tr_mon 30, FORRETRESS, MALE
+		tr_evs 192 HP
+		tr_moves SPIKES, GYRO_BALL, DEFENSE_CURL, ROLLOUT
+	tr_mon 28, MEOWTH @ METAL_COAT, MALE | GALARIAN_FORM
+		tr_evs 192 Atk
+		tr_moves PURSUIT, SWORDS_DANCE, IRON_HEAD, U_TURN
+	tr_mon 31, STEELIX @ LEFTOVERS, MALE
+		tr_evs 192 Def
+		tr_moves BODY_SLAM, SCREECH, ROCK_SLIDE, IRON_TAIL
+	end_trainer
 
 SECTION "PryceGroup", ROMX
 PryceGroup:
@@ -1033,10 +1077,10 @@ RedGroup:
 	tr_mon 87, OMASTAR @ WISE_GLASSES, MALE
 		tr_extra SHELL_ARMOR, SATK_UP_ATK_DOWN
 		tr_moves SURF, ANCIENTPOWER, EARTH_POWER, ICE_BEAM
-	tr_mon 87, GYARADOS @ QUICK_CLAW, MALE
-		tr_extra MOXIE, ATK_UP_SATK_DOWN, SHINY
-		tr_moves DRAGON_DANCE, WATERFALL, EARTHQUAKE, CRUNCH
-	tr_mon 88, CHARIZARD @ MUSCLE_BAND, MALE
+	tr_mon 88, ARTICUNO @ QUICK_CLAW, MALE
+		tr_extra SNOW_CLOAK, SATK_UP_ATK_DOWN, SHINY
+		tr_moves SAFEGUARD, AIR_SLASH, HAIL, BLIZZARD
+	tr_mon 89, CHARIZARD @ MUSCLE_BAND, MALE
 if DEF(FAITHFUL)
 		tr_extra DROUGHT, ATK_UP_SATK_DOWN
 		tr_moves FLARE_BLITZ, SWORDS_DANCE, EARTHQUAKE, AERIAL_ACE
@@ -1078,17 +1122,17 @@ Rival0Group:
 
 	def_trainer_class RIVAL0
 	def_trainer 1, "boy"
-	tr_mon 4, RATTATA
+	tr_mon 4, ZUBAT
 	tr_mon 5, CHIKORITA @ ORAN_BERRY
 	end_trainer
 
 	def_trainer 2, "boy"
-	tr_mon 4, RATTATA
+	tr_mon 4, ZUBAT
 	tr_mon 5, CYNDAQUIL @ ORAN_BERRY
 	end_trainer
 
 	def_trainer 3, "boy"
-	tr_mon 4, RATTATA
+	tr_mon 4, ZUBAT
 	tr_mon 5, TOTODILE @ ORAN_BERRY
 	end_trainer
 
@@ -7909,7 +7953,7 @@ GoldGroup:
 	tr_mon 90, "PLEASE!", TYPHLOSION @ ASSAULT_VEST, MALE
 		tr_moves FLAME_CHARGE, THUNDERPUNCH, RETURN, LEER
 	tr_mon 5, " ", CYNDAQUIL @ FOCUS_SASH, MALE
-		tr_moves HYPNOSIS, DREAM_EATER
+		tr_moves DESTINY_BOND
 	tr_mon 90, "FOREVER", HOUNDOOM @ SITRUS_BERRY, MALE
 		tr_moves FLASH, HYPNOSIS, THRASH, DREAM_EATER
 	tr_mon 85, "NOMORE", UNOWN @ CHOICE_SPECS, MALE | UNOWN_N_FORM

@@ -22,11 +22,13 @@ RuinsOfAlphResearchCenter_MapScriptHeader:
 	object_event  4,  5, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphResearchCenterScientist1Script, -1
 	object_event  5,  2, SPRITE_SCIENTIST, SPRITEMOVEDATA_WANDER, 1, 2, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphResearchCenterScientist2Script, -1
 	object_event  2,  5, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphResearchCenterScientist3Script, EVENT_RUINS_OF_ALPH_RESEARCH_CENTER_SCIENTIST
+	object_event  1,  2, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, PAL_NPC_GRAY, OBJECTTYPE_SCRIPT, 0, RuinsFossilScientistScript, -1
 
 	object_const_def
 	const RUINSOFALPHRESEARCHCENTER_SCIENTIST1
 	const RUINSOFALPHRESEARCHCENTER_SCIENTIST2
 	const RUINSOFALPHRESEARCHCENTER_SCIENTIST3
+	const RUINSOFALPHRESEARCHCENTER_SCIENTIST4
 
 RuinsofAlphResearchCenterTrigger1:
 	sdefer RuinsOfAlphResearchCenterGetUnownDexScript
@@ -329,6 +331,173 @@ RuinsOfAlphResearchCenterApproachesComputerMovement:
 	step_left
 	turn_head_up
 	step_end
+
+RuinsFossilScientistScript:
+	faceplayer
+	opentext
+	writetext RuinsFossilScientistText
+	waitbutton
+	checkitem HELIX_FOSSIL
+	iftruefwd .own_helix2
+	checkitem DOME_FOSSIL
+	iftruefwd .own_dome2
+	checkitem OLD_AMBER
+	iftruefwd .ask_old_amber2
+	jumpopenedtext NoFossils2Text
+
+.own_helix2
+	checkitem DOME_FOSSIL
+	iftruefwd .own_helix_and_dome2
+	checkitem OLD_AMBER
+	iftruefwd .ask_helix_amber2
+	writetext AskHelixFossil2Text
+	yesorno
+	iftruefwd ResurrectHelixFossil2
+	sjumpfwd .maybe_later2
+
+.own_dome2
+	checkitem OLD_AMBER
+	iftruefwd .ask_dome_amber2
+	writetext AskDomeFossil2Text
+	yesorno
+	iftruefwd ResurrectDomeFossil2
+	sjumpfwd .maybe_later2
+
+.own_helix_and_dome2
+	checkitem OLD_AMBER
+	iftruefwd .ask_helix_dome_amber2
+	loadmenu HelixDomeMenuDataHeader2
+	verticalmenu
+	closewindow
+	ifequalfwd $1, ResurrectHelixFossil2
+	ifequalfwd $2, ResurrectDomeFossil2
+	sjumpfwd .maybe_later2
+
+.ask_old_amber2
+	writetext AskOldAmber2Text
+	yesorno
+	iftruefwd ResurrectOldAmber2
+	sjumpfwd .maybe_later2
+
+.ask_helix_amber2
+	loadmenu HelixAmberMenuDataHeader2
+	verticalmenu
+	closewindow
+	ifequalfwd $1, ResurrectHelixFossil2
+	ifequalfwd $2, ResurrectOldAmber2
+	sjumpfwd .maybe_later2
+
+.ask_dome_amber2
+	loadmenu DomeAmberMenuDataHeader2
+	verticalmenu
+	closewindow
+	ifequalfwd $1, ResurrectDomeFossil2
+	ifequalfwd $2, ResurrectOldAmber2
+	sjumpfwd .maybe_later2
+
+.ask_helix_dome_amber2
+	loadmenu HelixDomeAmberMenuDataHeader2
+	verticalmenu
+	closewindow
+	ifequalfwd $1, ResurrectHelixFossil2
+	ifequalfwd $2, ResurrectDomeFossil2
+	ifequalfwd $3, ResurrectOldAmber2
+.maybe_later2:
+	jumpopenedtext MaybeLater2Text
+
+HelixDomeMenuDataHeader2:
+	db MENU_BACKUP_TILES
+	menu_coords 0, 4, 15, 11
+	dw .2MenuData2
+	db 1 ; default option
+
+.2MenuData2:
+	db $80 ; flags
+	db 3 ; items
+	db "Helix Fossil@"
+	db "Dome Fossil@"
+	db "Cancel@"
+
+HelixAmberMenuDataHeader2:
+	db MENU_BACKUP_TILES
+	menu_coords 0, 4, 15, 11
+	dw .2MenuData2
+	db 1 ; default option
+
+.2MenuData2:
+	db $80 ; flags
+	db 3 ; items
+	db "Helix Fossil@"
+	db "Old Amber@"
+	db "Cancel@"
+
+DomeAmberMenuDataHeader2:
+	db MENU_BACKUP_TILES
+	menu_coords 0, 4, 14, 11
+	dw .2MenuData2
+	db 1 ; default option
+
+.2MenuData2:
+	db $80 ; flags
+	db 3 ; items
+	db "Dome Fossil@"
+	db "Old Amber@"
+	db "Cancel@"
+
+HelixDomeAmberMenuDataHeader2:
+	db MENU_BACKUP_TILES
+	menu_coords 0, 2, 15, 11
+	dw .2MenuData2
+	db 1 ; default option
+
+.2MenuData2:
+	db $80 ; flags
+	db 4 ; items
+	db "Helix Fossil@"
+	db "Dome Fossil@"
+	db "Old Amber@"
+	db "Cancel@"
+
+ResurrectHelixFossil2:
+	takeitem HELIX_FOSSIL
+	scall ResurrectAFossilScript2
+	givepoke OMANYTE, 20
+	sjumpfwd FinishResurrect2
+
+ResurrectDomeFossil2:
+	takeitem DOME_FOSSIL
+	scall ResurrectAFossilScript2
+	givepoke KABUTO, 20
+	sjumpfwd FinishResurrect2
+
+ResurrectOldAmber2:
+	takeitem OLD_AMBER
+	scall ResurrectAFossilScript2
+	givepoke AERODACTYL, 20
+FinishResurrect2:
+	iffalse_jumpopenedtext NoRoomForFossilPokemon2Text
+	jumpopenedtext TakeGoodCareOfIt2Text
+
+ResurrectAFossilScript2:
+	writetext ResurrectingPokemon2Text
+	waitbutton
+	closetext
+	turnobject RUINSOFALPHRESEARCHCENTER_SCIENTIST4, UP
+	pause 15
+	playsound SFX_BOOT_PC
+	waitsfx
+	pause 30
+	playsound SFX_4_NOTE_DITTY
+	waitsfx
+	pause 5
+	waitsfx
+	pause 30
+	playsound SFX_SHUT_DOWN_PC
+	waitsfx
+	pause 15
+	faceplayer
+	opentext
+	end
 
 RuinsOfAlphResearchCenterModifiedDexText:
 	text "Done!"
@@ -904,3 +1073,76 @@ ExtraEventEndText:
 
     para "He really needs it."
     done
+
+RuinsFossilScientistText:
+	text "Did you know that"
+	line "you can extract"
+
+	para "#mon from"
+	line "fossils?"
+
+	para "I may not be able"
+	line "to take care of it"
+	cont "myself."
+
+	para "But I know someone"
+	line "from the Pewter"
+	cont "Museum who can."
+
+	para "If you ever need"
+	line "to, I can transfer"
+	cont "your fossils to"
+
+	para "my friend so he"
+	line "can resurrect"
+	cont "them."
+	done
+
+AskHelixFossil2Text:
+	text "Do you want to"
+	line "resurrect the"
+	cont "Helix Fossil?"
+	done
+
+AskDomeFossil2Text:
+	text "Do you want to"
+	line "resurrect the"
+	cont "Dome Fossil?"
+	done
+
+AskOldAmber2Text:
+	text "Do you want to"
+	line "resurrect the"
+	cont "Old Amber?"
+	done
+
+NoFossils2Text:
+	text "Hey! You don't"
+	line "have any fossils."
+	done
+
+MaybeLater2Text:
+	text "Just talk to me"
+	line "if you change"
+	cont "your mind."
+	done
+
+ResurrectingPokemon2Text:
+	text "OK! I'll send the"
+	line "fossil to the"
+	cont "Pewter Museum."
+
+	para "One second."
+	done
+
+NoRoomForFossilPokemon2Text:
+	text "Hey! You can't"
+	line "carry another"
+	cont "#mon, and your"
+	cont "Box is full, too!"
+	done
+
+TakeGoodCareOfIt2Text:
+	text "Take good care"
+	line "of it!"
+	done

@@ -50,7 +50,7 @@ CianwoodCity_MapScriptHeader:
 	const CIANWOODCITY_SUICUNE
 
 CianwoodCityFlyPointAndSuicune:
-	setflag ENGINE_FLYPOINT_CIANWOOD
+	clearflag ENGINE_FLYPOINT_CIANWOOD
 	setevent EVENT_EUSINE_IN_BURNED_TOWER
 	checkevent EVENT_BEAT_EUSINE
 	iffalsefwd .Done
@@ -104,6 +104,22 @@ CianwoodCitySuicuneAndEusine:
 	end
 
 CianwoodCityChucksWife:
+	clearflag ENGINE_ZEPHYRBADGE
+	clearflag ENGINE_HIVEBADGE
+	clearflag ENGINE_PLAINBADGE
+	clearflag ENGINE_FOGBADGE
+	clearflag ENGINE_STORMBADGE
+	clearflag ENGINE_MINERALBADGE
+	clearflag ENGINE_GLACIERBADGE
+	clearflag ENGINE_RISINGBADGE
+	clearflag ENGINE_BOULDERBADGE
+	clearflag ENGINE_CASCADEBADGE
+	clearflag ENGINE_THUNDERBADGE
+	clearflag ENGINE_RAINBOWBADGE
+	clearflag ENGINE_MARSHBADGE
+	clearflag ENGINE_SOULBADGE
+	clearflag ENGINE_VOLCANOBADGE
+	clearflag ENGINE_EARTHBADGE
 	checkevent EVENT_BEAT_CHUCK
 	iftrue_jumptextfaceplayer ChucksWifeChubbyText
 	jumptextfaceplayer ChucksWifeEasierToFlyText

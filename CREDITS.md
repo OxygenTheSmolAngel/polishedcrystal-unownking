@@ -5,16 +5,11 @@ Rangi42 (Sylvie)
 ScorchVx
 (The design is from FNF: The Unown King's Curse)
 
-# Custom Unown King Sprites by:
+# Custom Unown King, Celebi (Lost Silver) and Gold (Lost Silver) Front Sprites by:
 Oxygen (Me)
 
-Gold (Lost Silver) Sprites by:
+Gold (Lost Silver) Back Sprite by:
 Nikki (from the Crystal Clear Discord Server)
-- Sprites edited by: Oxygen (Me)
-
-Celebi (Lost Silver) sprites by:
-GushieGMan
-- Sprite animation edit by: Oxygen (Me)
 
 -------------
 # Polished Crystal Credits
