@@ -23,7 +23,7 @@ DarkCaveVioletEntrance_MapScriptHeader:
 	smashrock_event 27,  6
 	smashrock_event  7, 15
 	smashrock_event 37, 31
-	itemball_event 36, 22, DUSK_STONE, 1, EVENT_DARK_CAVE_VIOLET_ENTRANCE_DUSK_STONE
+	itemball_event 28,  2, DUSK_STONE, 1, EVENT_DARK_CAVE_VIOLET_ENTRANCE_DUSK_STONE
 	itemball_event 35,  9, HYPER_POTION, 1, EVENT_DARK_CAVE_VIOLET_ENTRANCE_HYPER_POTION
 	itemball_event 30, 28, DIRE_HIT, 1, EVENT_DARK_CAVE_VIOLET_ENTRANCE_DIRE_HIT
 

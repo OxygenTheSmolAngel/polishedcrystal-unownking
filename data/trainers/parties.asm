@@ -2717,8 +2717,6 @@ HikerGroup:
 
 	def_trainer BAILEY, "Bailey"
 	tr_mon 5, GEODUDE
-	tr_mon 5, GEODUDE
-	tr_mon 5, GEODUDE
 	tr_mon 7, LARVITAR
 	end_trainer
 
@@ -2754,7 +2752,7 @@ HikerGroup:
 	end_trainer
 
 	def_trainer EDWIN, "Edwin"
-	tr_mon 65, "Mimic", GOLEM
+	tr_mon 65, "Mimic", DITTO
 	end_trainer
 
 	def_trainer DEVIN, "Devin"
@@ -2819,6 +2817,8 @@ HikerGroup:
 
 	def_trainer STEVE, "Steve"
 	tr_mon LEVEL_FROM_BADGES + 7, STEELIX
+	tr_mon LEVEL_FROM_BADGES + 6, MAGNEMITE
+	tr_mon LEVEL_FROM_BADGES + 6, SPEAROW
 	end_trainer
 
 	def_trainer DERRICK, "Derrick"
@@ -6026,15 +6026,19 @@ SightseerFGroup:
 
 	def_trainer_class SIGHTSEERF
 	def_trainer ROSIE, "Rosie"
-	tr_mon 50, BULBASAUR
+	tr_mon 51, VENUSAUR
+	tr_mon 50, BELLOSSOM
 	end_trainer
 
 	def_trainer KAMILA, "Kamila"
-	tr_mon 50, BULBASAUR
+	tr_mon 52, BUTTERFREE
+	tr_mon 51, LEDYBA
 	end_trainer
 
 	def_trainer NOELLE, "Noelle"
-	tr_mon 50, BULBASAUR
+	tr_mon 50, STANTLER
+	tr_mon 51, PILOSWINE
+	tr_mon 50, DELIBIRD
 	end_trainer
 
 	def_trainer PILAR, "Pilar"
@@ -6200,9 +6204,9 @@ CooltrainerMGroup:
 	end_trainer
 
 	def_trainer KIERAN, "Kieran"
-	tr_mon 52, HYPNO
-	tr_mon 53, RHYHORN
-	tr_mon 55, PRIMEAPE
+	tr_mon 52, POLITOED
+	tr_mon 53, DRAGONITE
+	tr_mon 55, PORYGON_Z
 	end_trainer
 
 	def_trainer FINCH, "Finch"
